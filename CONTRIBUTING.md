@@ -6,6 +6,7 @@ Contributing to Odoo
 TL;DR
 dfasdasdfasdf
 safadsads
+edbvdkfajasljkds
 
 * If you [make a pull request](https://github.com/odoo/odoo/wiki/Contributing#making-pull-requests),
   do not create an issue! Use the PR description for that
