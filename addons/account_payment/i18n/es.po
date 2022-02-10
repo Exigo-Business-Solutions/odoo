@@ -3,15 +3,16 @@
 # 	* account_payment
 # 
 # Translators:
-# Martin Trigaux, 2021
+# Martin Trigaux, 2020
+# Daniela Cervantes <dace@odoo.com>, 2021
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.3\n"
+"Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-11 09:26+0000\n"
-"PO-Revision-Date: 2021-09-14 12:19+0000\n"
-"Last-Translator: Martin Trigaux, 2021\n"
+"POT-Creation-Date: 2020-11-27 14:12+0000\n"
+"PO-Revision-Date: 2020-09-07 08:10+0000\n"
+"Last-Translator: Daniela Cervantes <dace@odoo.com>, 2021\n"
 "Language-Team: Spanish (https://www.transifex.com/odoo/teams/41243/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -114,15 +115,13 @@ msgstr ""
 
 #. module: account_payment
 #: model_terms:ir.ui.view,arch_db:account_payment.portal_invoice_payment
-msgid ""
-"<strong>No suitable payment option could be found.</strong><br/>\n"
-"                                If you believe that it is an error, please contact the website administrator."
-msgstr ""
-
-#. module: account_payment
-#: model_terms:ir.ui.view,arch_db:account_payment.portal_invoice_payment
 msgid "Close"
 msgstr "Cerrar"
+
+#. module: account_payment
+#: model:ir.model.fields,field_description:account_payment.field_payment_transaction__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
 
 #. module: account_payment
 #: model_terms:ir.ui.view,arch_db:account_payment.portal_invoice_success
@@ -133,7 +132,36 @@ msgstr ""
 "Hecho, su pago en línea ha sido procesado con éxito. Gracias por su orden."
 
 #. module: account_payment
+#: model:ir.model.fields,field_description:account_payment.field_payment_transaction__id
+msgid "ID"
+msgstr "Identificación"
+
+#. module: account_payment
+#: code:addons/account_payment/controllers/payment.py:0
+#, python-format
+msgid ""
+"If we store your payment information on our server, subscription payments "
+"will be made automatically."
+msgstr ""
+"Si guardamos la información de tu pago en nuestro servidor, los pagos de la "
+"suscripción se realizarán de forma automática."
+
+#. module: account_payment
+#: model:ir.model.fields,field_description:account_payment.field_payment_transaction____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: account_payment
+#: code:addons/account_payment/controllers/payment.py:0
+#, python-format
+msgid "Pay & Confirm"
+msgstr "Pagar y confirmar"
+
+#. module: account_payment
+#: code:addons/account_payment/models/payment.py:0
+#: model_terms:ir.ui.view,arch_db:account_payment.portal_invoice_payment
 #: model_terms:ir.ui.view,arch_db:account_payment.portal_my_invoices_payment
+#, python-format
 msgid "Pay Now"
 msgstr "Pagar ahora"
 
@@ -146,6 +174,11 @@ msgstr "Pagar ahora"
 #: model_terms:ir.ui.view,arch_db:account_payment.portal_invoice_payment
 msgid "Pay with"
 msgstr "Pagar con"
+
+#. module: account_payment
+#: model:ir.model,name:account_payment.model_payment_transaction
+msgid "Payment Transaction"
+msgstr "Transacción de pago"
 
 #. module: account_payment
 #: model_terms:ir.ui.view,arch_db:account_payment.portal_my_invoices_payment

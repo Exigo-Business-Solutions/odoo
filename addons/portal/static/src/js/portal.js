@@ -96,8 +96,9 @@ publicWidget.registry.PortalHomeCounters = publicWidget.Widget.extend({
 publicWidget.registry.portalSearchPanel = publicWidget.Widget.extend({
     selector: '.o_portal_search_panel',
     events: {
+        'click .search-submit': '_onSearchSubmitClick',
         'click .dropdown-item': '_onDropdownItemClick',
-        'submit': '_onSubmit',
+        'keyup input[name="search"]': '_onSearchInputKeyup',
     },
 
     /**
@@ -138,6 +139,12 @@ publicWidget.registry.portalSearchPanel = publicWidget.Widget.extend({
     /**
      * @private
      */
+    _onSearchSubmitClick: function () {
+        this._search();
+    },
+    /**
+     * @private
+     */
     _onDropdownItemClick: function (ev) {
         ev.preventDefault();
         var $item = $(ev.currentTarget);
@@ -149,9 +156,10 @@ publicWidget.registry.portalSearchPanel = publicWidget.Widget.extend({
     /**
      * @private
      */
-    _onSubmit: function (ev) {
-        ev.preventDefault();
-        this._search();
+    _onSearchInputKeyup: function (ev) {
+        if (ev.keyCode === $.ui.keyCode.ENTER) {
+            this._search();
+        }
     },
 });
 
@@ -207,6 +215,9 @@ function handleCheckIdentity(rpc, wrapped) {
                     }
                 }, {
                     text: _t('Cancel'), close: true
+                }, {
+                    text: _t('Forgot password?'), classes: 'btn btn-link',
+                    click() { window.location.href = "/web/reset_password/"; }
                 }]
             }).on('close', null, () => {
                 // unlink wizard object?

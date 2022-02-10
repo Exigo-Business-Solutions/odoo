@@ -3,17 +3,18 @@
 # 	* base_automation
 # 
 # Translators:
-# Martin Trigaux, 2021
-# Khwunchai Jaengsawang <khwunchai.j@ku.th>, 2021
-# Odoo Thaidev <odoothaidev@gmail.com>, 2021
+# Martin Trigaux, 2020
+# Khwunchai Jaengsawang <khwunchai.j@ku.th>, 2020
+# gsong <gsong2014@foxmail.com>, 2020
+# Odoo Thaidev <odoothaidev@gmail.com>, 2020
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Odoo Server saas~13.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-14 10:28+0000\n"
-"PO-Revision-Date: 2021-09-14 12:20+0000\n"
-"Last-Translator: Odoo Thaidev <odoothaidev@gmail.com>, 2021\n"
+"POT-Creation-Date: 2020-04-21 10:46+0000\n"
+"PO-Revision-Date: 2020-09-07 08:10+0000\n"
+"Last-Translator: Odoo Thaidev <odoothaidev@gmail.com>, 2020\n"
 "Language-Team: Thai (https://www.transifex.com/odoo/teams/41243/th/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,7 +28,7 @@ msgstr ""
 #, python-format
 msgid ""
 "\"\n"
-"                (ID:"
+"                    (ID:"
 msgstr ""
 
 #. module: base_automation
@@ -64,6 +65,11 @@ msgstr "กิจกรรม"
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__activity_user_type
 msgid "Activity User Type"
 msgstr "Activity User Type"
+
+#. module: base_automation
+#: model:ir.model.fields,field_description:base_automation.field_base_automation__channel_ids
+msgid "Add Channels"
+msgstr "เพิ่มช่องทาง"
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__partner_ids
@@ -194,9 +200,9 @@ msgstr ""
 #, python-format
 msgid ""
 "Disabling this automated action will enable you to continue your workflow\n"
-"                but any data created after this could potentially be corrupted,\n"
-"                as you are effectively disabling a customization that may set\n"
-"                important and/or required fields."
+"                    but any data created after this could potentially be corrupted,\n"
+"                    as you are effectively disabling a customization that may set\n"
+"                    important and/or required fields."
 msgstr ""
 
 #. module: base_automation
@@ -466,7 +472,7 @@ msgstr ""
 #, python-format
 msgid ""
 "The error occurred during the execution of the automated action\n"
-"                \""
+"                    \""
 msgstr ""
 
 #. module: base_automation
@@ -501,7 +507,6 @@ msgstr ""
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__usage
 #: model:ir.model.fields,field_description:base_automation.field_ir_actions_server__usage
-#: model:ir.model.fields,field_description:base_automation.field_ir_cron__usage
 msgid "Usage"
 msgstr "การใช้งานการดำเนินการ"
 
@@ -539,7 +544,6 @@ msgid "Value Mapping"
 msgstr "Value Mapping"
 
 #. module: base_automation
-#: code:addons/base_automation/models/base_automation.py:0
 #: code:addons/base_automation/models/base_automation.py:0
 #, python-format
 msgid "Warning"
@@ -593,12 +597,4 @@ msgstr ""
 #: code:addons/base_automation/static/src/xml/base_automation_error_dialog.xml:0
 #, python-format
 msgid "You can disable this automated action or edit it to solve the issue."
-msgstr ""
-
-#. module: base_automation
-#: code:addons/base_automation/models/base_automation.py:0
-#, python-format
-msgid ""
-"You cannot send an email, add followers or create an activity for a deleted "
-"record.  It simply does not work."
 msgstr ""

@@ -3,18 +3,18 @@
 # 	* barcodes
 # 
 # Translators:
-# Martin Trigaux, 2021
-# sharkutz <sharkutz4life@yahoo.com>, 2021
+# Martin Trigaux, 2020
+# sharkutz <sharkutz4life@yahoo.com>, 2020
+# Hongu Cosmin <cosmin513@gmail.com>, 2020
 # Foldi Robert <foldirobert@nexterp.ro>, 2021
-# Hongu Cosmin <cosmin513@gmail.com>, 2021
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.4\n"
+"Project-Id-Version: Odoo Server saas~13.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-12 07:50+0000\n"
-"PO-Revision-Date: 2021-09-14 12:20+0000\n"
-"Last-Translator: Hongu Cosmin <cosmin513@gmail.com>, 2021\n"
+"POT-Creation-Date: 2020-09-01 07:28+0000\n"
+"PO-Revision-Date: 2020-09-07 08:10+0000\n"
+"Last-Translator: Foldi Robert <foldirobert@nexterp.ro>, 2021\n"
 "Language-Team: Romanian (https://www.transifex.com/odoo/teams/41243/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 
 #. module: barcodes
-#: code:addons/barcodes/models/barcode_rule.py:0
+#: code:addons/barcodes/models/barcodes.py:0
 #, python-format
 msgid " '*' is not a valid Regex Barcode Pattern. Did you mean '.*' ?"
 msgstr "'*' nu este un model Regex Cod de bare valid. Vroiai sa spui '.*' ?"
@@ -143,6 +143,9 @@ msgstr "Abandonează"
 #. module: barcodes
 #: model:ir.model.fields,field_description:barcodes.field_barcode_nomenclature__display_name
 #: model:ir.model.fields,field_description:barcodes.field_barcode_rule__display_name
+#: model:ir.model.fields,field_description:barcodes.field_barcodes_barcode_events_mixin__display_name
+#: model:ir.model.fields,field_description:barcodes.field_ir_http__display_name
+#: model:ir.model.fields,field_description:barcodes.field_res_company__display_name
 msgid "Display Name"
 msgstr "Nume afișat"
 
@@ -181,12 +184,18 @@ msgstr "Rutare HTTP"
 #. module: barcodes
 #: model:ir.model.fields,field_description:barcodes.field_barcode_nomenclature__id
 #: model:ir.model.fields,field_description:barcodes.field_barcode_rule__id
+#: model:ir.model.fields,field_description:barcodes.field_barcodes_barcode_events_mixin__id
+#: model:ir.model.fields,field_description:barcodes.field_ir_http__id
+#: model:ir.model.fields,field_description:barcodes.field_res_company__id
 msgid "ID"
 msgstr "ID"
 
 #. module: barcodes
 #: model:ir.model.fields,field_description:barcodes.field_barcode_nomenclature____last_update
 #: model:ir.model.fields,field_description:barcodes.field_barcode_rule____last_update
+#: model:ir.model.fields,field_description:barcodes.field_barcodes_barcode_events_mixin____last_update
+#: model:ir.model.fields,field_description:barcodes.field_ir_http____last_update
+#: model:ir.model.fields,field_description:barcodes.field_res_company____last_update
 msgid "Last Modified on"
 msgstr "Ultima modificare la"
 
@@ -293,7 +302,7 @@ msgid "The matched pattern will alias to this barcode"
 msgstr "Modelul potrivit va fi alias la acest cod de bare"
 
 #. module: barcodes
-#: code:addons/barcodes/models/barcode_rule.py:0
+#: code:addons/barcodes/models/barcodes.py:0
 #, python-format
 msgid ""
 "There is a syntax error in the barcode pattern %(pattern)s: a rule can only "
@@ -303,7 +312,7 @@ msgstr ""
 "poate conține doar o pereche de aparate dentare."
 
 #. module: barcodes
-#: code:addons/barcodes/models/barcode_rule.py:0
+#: code:addons/barcodes/models/barcodes.py:0
 #, python-format
 msgid ""
 "There is a syntax error in the barcode pattern %(pattern)s: braces can only "
@@ -313,7 +322,7 @@ msgstr ""
 " dentare pot conține doar N-uri urmate de D-uri."
 
 #. module: barcodes
-#: code:addons/barcodes/models/barcode_rule.py:0
+#: code:addons/barcodes/models/barcodes.py:0
 #, python-format
 msgid ""
 "There is a syntax error in the barcode pattern %(pattern)s: empty braces."

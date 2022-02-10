@@ -1,17 +1,38 @@
-/** @odoo-module **/
+odoo.define('mail/static/src/env/test_env.js', function (require) {
+'use strict';
 
-import { nextTick } from '@mail/utils/utils';
+const { makeDeferred } = require('mail/static/src/utils/deferred/deferred.js');
+const { nextTick } = require('mail/static/src/utils/utils.js');
+
+const { Store } = owl;
+const { EventBus } = owl.core;
 
 /**
  * @param {Object} [providedEnv={}]
  * @returns {Object}
  */
-export function addMessagingToEnv(providedEnv = {}) {
-    const env = { ...providedEnv };
+function addMessagingToEnv(providedEnv = {}) {
+    const env = Object.assign(providedEnv);
+
+    /**
+     * Messaging store
+     */
+    const store = new Store({
+        env,
+        state: {
+            messagingRevNumber: 0,
+        },
+    });
+
+    /**
+     * Registry of models.
+     */
+    env.models = {};
     /**
      * Environment keys used in messaging.
      */
     Object.assign(env, {
+        autofetchPartnerImStatus: false,
         browser: Object.assign({
             innerHeight: 1080,
             innerWidth: 1920,
@@ -22,7 +43,35 @@ export function addMessagingToEnv(providedEnv = {}) {
                 },
             }, (env.browser && env.browser.Notification) || {}),
         }, env.browser),
+        destroyMessaging() {
+            if (env.modelManager) {
+                env.modelManager.deleteAll();
+                env.messaging = undefined;
+            }
+        },
+        disableAnimation: true,
+        isMessagingInitialized() {
+            if (!this.messaging) {
+                return false;
+            }
+            return this.messaging.isInitialized;
+        },
+        /**
+         * States whether the environment is in QUnit test or not.
+         *
+         * Useful to prevent some behaviour in QUnit tests, like applying
+         * style of attachment that uses url.
+         */
+        isQUnitTest: true,
+        loadingBaseDelayDuration: providedEnv.loadingBaseDelayDuration || 0,
+        messaging: undefined,
+        messagingCreatedPromise: makeDeferred(),
+        messagingInitializedDeferred: makeDeferred(),
+        messagingBus: new EventBus(),
+        modelManager: undefined,
+        store,
     });
+
     return env;
 }
 
@@ -30,8 +79,10 @@ export function addMessagingToEnv(providedEnv = {}) {
  * @param {Object} [providedEnv={}]
  * @returns {Object}
  */
-export function addTimeControlToEnv(providedEnv = {}) {
-    const env = { ...providedEnv };
+function addTimeControlToEnv(providedEnv = {}) {
+
+    let env = Object.assign({}, providedEnv);
+
     if (!env.browser) {
         env.browser = {};
     }
@@ -88,3 +139,10 @@ export function addTimeControlToEnv(providedEnv = {}) {
     });
     return env;
 }
+
+return {
+    addMessagingToEnv,
+    addTimeControlToEnv,
+};
+
+});

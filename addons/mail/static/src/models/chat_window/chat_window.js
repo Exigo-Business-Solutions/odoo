@@ -1,9 +1,9 @@
-/** @odoo-module **/
+odoo.define('mail/static/src/models/chat_window/chat_window.js', function (require) {
+'use strict';
 
-import { registerNewModel } from '@mail/model/model_core';
-import { attr, many2one, one2one } from '@mail/model/model_field';
-import { clear, insertAndReplace, link, unlink } from '@mail/model/model_field_command';
-import { markEventHandled } from '@mail/utils/utils';
+const { registerNewModel } = require('mail/static/src/model/model_core.js');
+const { attr, many2one, one2many, one2one } = require('mail/static/src/model/model_field.js');
+const { clear } = require('mail/static/src/model/model_field_command.js');
 
 function factory(dependencies) {
 
@@ -13,13 +13,22 @@ function factory(dependencies) {
          * @override
          */
         _created() {
-            super._created();
-            // Bind necessary until OWL supports arrow function in handlers: https://github.com/odoo/owl/issues/876
-            this.onClickHideInviteForm = this.onClickHideInviteForm.bind(this);
-            this.onClickHideMemberList = this.onClickHideMemberList.bind(this);
-            this.onClickShowInviteForm = this.onClickShowInviteForm.bind(this);
-            this.onClickShowMemberList = this.onClickShowMemberList.bind(this);
-            this.onFocusInNewMessageFormInput = this.onFocusInNewMessageFormInput.bind(this);
+            const res = super._created(...arguments);
+            this._onShowHomeMenu.bind(this);
+            this._onHideHomeMenu.bind(this);
+
+            this.env.messagingBus.on('hide_home_menu', this, this._onHideHomeMenu);
+            this.env.messagingBus.on('show_home_menu', this, this._onShowHomeMenu);
+            return res;
+        }
+
+        /**
+         * @override
+         */
+        _willDelete() {
+            this.env.messagingBus.off('hide_home_menu', this, this._onHideHomeMenu);
+            this.env.messagingBus.off('show_home_menu', this, this._onShowHomeMenu);
+            return super._willDelete(...arguments);
         }
 
         //----------------------------------------------------------------------
@@ -34,23 +43,22 @@ function factory(dependencies) {
          */
         close({ notifyServer } = {}) {
             if (notifyServer === undefined) {
-                notifyServer = !this.messaging.device.isMobile;
+                notifyServer = !this.env.messaging.device.isMobile;
             }
-            if (this.messaging.device.isMobile && !this.messaging.discuss.isOpen) {
+            const thread = this.thread;
+            this.delete();
+            // Flux specific: 'closed' fold state should only be saved on the
+            // server when manually closing the chat window. Delete at destroy
+            // or sync from server value for example should not save the value.
+            if (thread && notifyServer) {
+                thread.notifyFoldStateToServer('closed');
+            }
+            if (this.env.device.isMobile && !this.env.messaging.discuss.isOpen) {
                 // If we are in mobile and discuss is not open, it means the
                 // chat window was opened from the messaging menu. In that
                 // case it should be re-opened to simulate it was always
                 // there in the background.
-                this.messaging.messagingMenu.update({ isOpen: true });
-            }
-            // Flux specific: 'closed' fold state should only be saved on the
-            // server when manually closing the chat window. Delete at destroy
-            // or sync from server value for example should not save the value.
-            if (this.thread && notifyServer && !this.messaging.currentGuest) {
-                this.thread.notifyFoldStateToServer('closed');
-            }
-            if (this.exists()) {
-                this.delete();
+                this.env.messaging.messagingMenu.update({ isOpen: true });
             }
         }
 
@@ -64,12 +72,7 @@ function factory(dependencies) {
          * Programmatically auto-focus an existing chat window.
          */
         focus() {
-            if (!this.thread) {
-                this.update({ isDoFocus: true });
-            }
-            if (this.threadView && this.threadView.composerView) {
-                this.threadView.composerView.update({ doFocus: true });
-            }
+            this.update({ isDoFocus: true });
         }
 
         focusNextVisibleUnfoldedChatWindow() {
@@ -93,28 +96,26 @@ function factory(dependencies) {
          */
         fold({ notifyServer } = {}) {
             if (notifyServer === undefined) {
-                notifyServer = !this.messaging.device.isMobile;
+                notifyServer = !this.env.messaging.device.isMobile;
             }
             this.update({ isFolded: true });
             // Flux specific: manually folding the chat window should save the
             // new state on the server.
-            if (this.thread && notifyServer && !this.messaging.currentGuest) {
+            if (this.thread && notifyServer) {
                 this.thread.notifyFoldStateToServer('folded');
             }
         }
 
         /**
          * Makes this chat window active, which consists of making it visible,
-         * unfolding it, and focusing it if the user isn't on a mobile device.
+         * unfolding it, and focusing it.
          *
          * @param {Object} [options]
          */
         makeActive(options) {
             this.makeVisible();
             this.unfold(options);
-            if ((options && options.focus !== undefined) ? options.focus : !this.messaging.device.isMobileDevice) {
-                this.focus();
-            }
+            this.focus();
         }
 
         /**
@@ -130,76 +131,17 @@ function factory(dependencies) {
         }
 
         /**
-         * Handles click on the "stop adding users" button.
-         *
-         * @param {MouseEvent} ev
+         * Shift this chat window to the left on screen.
          */
-        onClickHideInviteForm(ev) {
-            markEventHandled(ev, 'ChatWindow.onClickCommand');
-            this.update({ channelInvitationForm: clear() });
+        shiftLeft() {
+            this.manager.shiftLeft(this);
         }
 
         /**
-         * @param {MouseEvent} ev
+         * Shift this chat window to the right on screen.
          */
-        onClickHideMemberList(ev) {
-            markEventHandled(ev, 'ChatWindow.onClickHideMemberList');
-            this.update({ isMemberListOpened: false });
-            if (this.threadViewer.threadView) {
-                this.threadViewer.threadView.addComponentHint('member-list-hidden');
-            }
-        }
-
-        /**
-         * Handles click on the "add users" button.
-         *
-         * @param {MouseEvent} ev
-         */
-        onClickShowInviteForm(ev) {
-            markEventHandled(ev, 'ChatWindow.onClickCommand');
-            this.update({
-                channelInvitationForm: insertAndReplace({
-                    doFocusOnSearchInput: true,
-                }),
-                isMemberListOpened: false,
-            });
-            if (!this.messaging.isCurrentUserGuest) {
-                this.channelInvitationForm.searchPartnersToInvite();
-            }
-        }
-
-        /**
-         * @param {MouseEvent} ev
-         */
-        onClickShowMemberList(ev) {
-            markEventHandled(ev, 'ChatWindow.onClickShowMemberList');
-            this.update({
-                channelInvitationForm: clear(),
-                isMemberListOpened: true,
-            });
-        }
-
-        /**
-         * @param {Event} ev
-         */
-        onFocusInNewMessageFormInput(ev) {
-            if (this.exists()) {
-                this.update({ isFocused: true });
-            }
-        }
-
-        /**
-         * Swap this chat window with the previous one.
-         */
-        shiftPrev() {
-            this.manager.shiftPrev(this);
-        }
-
-        /**
-         * Swap this chat window with the next one.
-         */
-        shiftNext() {
-            this.manager.shiftNext(this);
+        shiftRight() {
+            this.manager.shiftRight(this);
         }
 
         /**
@@ -208,12 +150,12 @@ function factory(dependencies) {
          */
         unfold({ notifyServer } = {}) {
             if (notifyServer === undefined) {
-                notifyServer = !this.messaging.device.isMobile;
+                notifyServer = !this.env.messaging.device.isMobile;
             }
             this.update({ isFolded: false });
             // Flux specific: manually opening the chat window should save the
             // new state on the server.
-            if (this.thread && notifyServer && !this.messaging.currentGuest) {
+            if (this.thread && notifyServer) {
                 this.thread.notifyFoldStateToServer('open');
             }
         }
@@ -221,25 +163,6 @@ function factory(dependencies) {
         //----------------------------------------------------------------------
         // Private
         //----------------------------------------------------------------------
-
-        /**
-         * @private
-         * @returns {boolean}
-         */
-        _computeHasCallButtons() {
-            return Boolean(this.thread) && this.thread.rtcSessions.length === 0 && ['channel', 'chat', 'group'].includes(this.thread.channel_type);
-        }
-
-        /**
-         * @private
-         * @returns {boolean}
-         */
-        _computeHasInviteFeature() {
-            return Boolean(
-                this.thread && this.thread.hasInviteFeature &&
-                this.messaging && this.messaging.device && this.messaging.device.isMobile
-            );
-        }
 
         /**
          * @private
@@ -253,7 +176,7 @@ function factory(dependencies) {
          * @private
          * @returns {boolean}
          */
-        _computeHasShiftPrev() {
+        _computeHasShiftLeft() {
             if (!this.manager) {
                 return false;
             }
@@ -269,7 +192,7 @@ function factory(dependencies) {
          * @private
          * @returns {boolean}
          */
-        _computeHasShiftNext() {
+        _computeHasShiftRight() {
             if (!this.manager) {
                 return false;
             }
@@ -285,7 +208,7 @@ function factory(dependencies) {
          * @returns {boolean}
          */
         _computeHasThreadView() {
-            return this.isVisible && !this.isFolded && !!this.thread && !this.isMemberListOpened && !this.channelInvitationForm;
+            return this.isVisible && !this.isFolded && this.thread;
         }
 
         /**
@@ -320,18 +243,6 @@ function factory(dependencies) {
                 return this.thread.displayName;
             }
             return this.env._t("New message");
-        }
-
-        /**
-         * @private
-         * @returns {mail.thread_viewer}
-         */
-        _computeThreadViewer() {
-            return insertAndReplace({
-                compact: true,
-                hasThreadView: this.hasThreadView,
-                thread: this.thread ? link(this.thread) : unlink(),
-            });
         }
 
         /**
@@ -409,42 +320,52 @@ function factory(dependencies) {
             return nextToFocus;
         }
 
+        //----------------------------------------------------------------------
+        // Handlers
+        //----------------------------------------------------------------------
+
+        /**
+         * @private
+         */
+        async _onHideHomeMenu() {
+            if (!this.threadView) {
+                return;
+            }
+            this.threadView.addComponentHint('home-menu-hidden');
+        }
+
+        /**
+         * @private
+         */
+        async _onShowHomeMenu() {
+            if (!this.threadView) {
+                return;
+            }
+            this.threadView.addComponentHint('home-menu-shown');
+        }
+
     }
 
     ChatWindow.fields = {
-        /**
-         * Determines the channel invitation form displayed by this chat window
-         * (if any). Only makes sense if hasInviteFeature is true.
-         */
-        channelInvitationForm: one2one('mail.channel_invitation_form', {
-            inverse: 'chatWindow',
-            isCausal: true,
-        }),
-        /**
-         * Determines whether the buttons to start a RTC call should be displayed.
-         */
-        hasCallButtons: attr({
-            default: false,
-            compute: '_computeHasCallButtons',
-        }),
-        /**
-         * States whether this chat window has the invite feature.
-         */
-        hasInviteFeature: attr({
-            compute: '_computeHasInviteFeature',
-        }),
         /**
          * Determines whether "new message form" should be displayed.
          */
         hasNewMessageForm: attr({
             compute: '_computeHasNewMessageForm',
+            dependencies: [
+                'isFolded',
+                'isVisible',
+                'thread',
+            ],
         }),
-        hasShiftPrev: attr({
-            compute: '_computeHasShiftPrev',
+        hasShiftLeft: attr({
+            compute: '_computeHasShiftLeft',
+            dependencies: ['managerAllOrderedVisible'],
             default: false,
         }),
-        hasShiftNext: attr({
-            compute: '_computeHasShiftNext',
+        hasShiftRight: attr({
+            compute: '_computeHasShiftRight',
+            dependencies: ['managerAllOrderedVisible'],
             default: false,
         }),
         /**
@@ -452,6 +373,11 @@ function factory(dependencies) {
          */
         hasThreadView: attr({
             compute: '_computeHasThreadView',
+            dependencies: [
+                'isFolded',
+                'isVisible',
+                'thread',
+            ],
         }),
         /**
          * Determine whether the chat window should be programmatically
@@ -475,30 +401,31 @@ function factory(dependencies) {
             default: false,
         }),
         /**
-         * Determines whether the member list of this chat window is opened.
-         * Only makes sense if this thread hasMemberListFeature is true.
-         */
-        isMemberListOpened: attr({
-            default: false,
-        }),
-        /**
          * States whether `this` is visible or not. Should be considered
          * read-only. Setting this value manually will not make it visible.
          * @see `makeVisible`
          */
         isVisible: attr({
             compute: '_computeIsVisible',
+            dependencies: [
+                'managerAllOrderedVisible',
+            ],
         }),
         manager: many2one('mail.chat_window_manager', {
             inverse: 'chatWindows',
-            readonly: true,
         }),
-        managerAsNewMessage: one2one('mail.chat_window_manager', {
-            inverse: 'newMessageChatWindow',
-            readonly: true,
+        managerAllOrderedVisible: one2many('mail.chat_window', {
+            related: 'manager.allOrderedVisible',
+        }),
+        managerVisual: attr({
+            related: 'manager.visual',
         }),
         name: attr({
             compute: '_computeName',
+            dependencies: [
+                'thread',
+                'threadDisplayName',
+            ],
         }),
         /**
          * Determines the `mail.thread` that should be displayed by `this`.
@@ -506,7 +433,9 @@ function factory(dependencies) {
          */
         thread: one2one('mail.thread', {
             inverse: 'chatWindow',
-            readonly: true,
+        }),
+        threadDisplayName: attr({
+            related: 'thread.displayName',
         }),
         /**
          * States the `mail.thread_view` displaying `this.thread`.
@@ -518,11 +447,9 @@ function factory(dependencies) {
          * Determines the `mail.thread_viewer` managing the display of `this.thread`.
          */
         threadViewer: one2one('mail.thread_viewer', {
-            compute: '_computeThreadViewer',
+            default: [['create']],
             inverse: 'chatWindow',
             isCausal: true,
-            readonly: true,
-            required: true,
         }),
         /**
          * This field handle the "order" (index) of the visible chatWindow inside the UI.
@@ -532,15 +459,22 @@ function factory(dependencies) {
          */
         visibleIndex: attr({
             compute: '_computeVisibleIndex',
+            dependencies: [
+                'manager',
+                'managerVisual',
+            ],
         }),
         visibleOffset: attr({
             compute: '_computeVisibleOffset',
+            dependencies: ['managerVisual'],
         }),
     };
-    ChatWindow.identifyingFields = ['manager', ['thread', 'managerAsNewMessage']];
+
     ChatWindow.modelName = 'mail.chat_window';
 
     return ChatWindow;
 }
 
 registerNewModel('mail.chat_window', factory);
+
+});

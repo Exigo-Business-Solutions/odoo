@@ -3,34 +3,31 @@
 # 	* analytic
 # 
 # Translators:
-# Piotr Strębski <strebski@gmail.com>, 2021
-# Martin Trigaux, 2021
-# Dariusz Żbikowski <darek@krokus.com.pl>, 2021
+# Martin Trigaux, 2020
+# Dariusz Żbikowski <darek@krokus.com.pl>, 2020
+# Grzegorz Grzelak <grzegorz.grzelak@openglobe.pl>, 2020
+# Judyta Kaźmierczak <judyta.kazmierczak@openglobe.pl>, 2020
+# Mikołaj Dziurzyński <mikolaj.dziurzynski@openglobe.pl>, 2020
+# Tomasz Leppich <t.leppich@gmail.com>, 2020
+# Zdzisław Krajewski <zdzichucb@gmail.com>, 2020
+# Piotr Szlązak <szlazakpiotr@gmail.com>, 2020
+# Slawomir Adamus <melthalion@gmail.com>, 2020
+# Marcin Młynarczyk <mlynarczyk@gmail.com>, 2020
+# Karol Rybak <karolrybak85@gmail.com>, 2020
+# Andrzej Donczew <a.donczew@hadron.eu.com>, 2020
+# Piotr Cierkosz <piotr.w.cierkosz@gmail.com>, 2020
+# Paweł Wodyński <pw@myodoo.pl>, 2020
+# Maksym <ms@myodoo.pl>, 2020
+# Natalia Gros <nag@odoo.com>, 2020
 # Wojciech Warczakowski <w.warczakowski@gmail.com>, 2021
-# Grzegorz Grzelak <grzegorz.grzelak@openglobe.pl>, 2021
-# Judyta Kaźmierczak <judyta.kazmierczak@openglobe.pl>, 2021
-# Mikołaj Dziurzyński <mikolaj.dziurzynski@openglobe.pl>, 2021
-# Tomasz Leppich <t.leppich@gmail.com>, 2021
-# Zdzisław Krajewski <zdzichucb@gmail.com>, 2021
-# Piotr Szlązak <szlazakpiotr@gmail.com>, 2021
-# Slawomir Adamus <melthalion@gmail.com>, 2021
-# zieloo <zieloo@gmail.com>, 2021
-# Marcin Młynarczyk <mlynarczyk@gmail.com>, 2021
-# Karol Rybak <karolrybak85@gmail.com>, 2021
-# Andrzej Donczew <a.donczew@hadron.eu.com>, 2021
-# Piotr Cierkosz <piotr.w.cierkosz@gmail.com>, 2021
-# Paweł Wodyński <pw@myodoo.pl>, 2021
-# Maksym <ms@myodoo.pl>, 2021
-# Natalia Gros <nag@odoo.com>, 2021
-# Rafał Kozak <rafal.kozak@openglobe.pl>, 2021
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Odoo Server saas~12.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-14 10:28+0000\n"
-"PO-Revision-Date: 2021-09-14 12:20+0000\n"
-"Last-Translator: Rafał Kozak <rafal.kozak@openglobe.pl>, 2021\n"
+"POT-Creation-Date: 2019-09-09 12:17+0000\n"
+"PO-Revision-Date: 2020-09-07 08:10+0000\n"
+"Last-Translator: Wojciech Warczakowski <w.warczakowski@gmail.com>, 2021\n"
 "Language-Team: Polish (https://www.transifex.com/odoo/teams/41243/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,14 +36,9 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
 #. module: analytic
-#: model_terms:ir.ui.view,arch_db:analytic.view_account_analytic_account_form
-msgid "<span class=\"o_stat_text\">Gross Margin</span>"
-msgstr "<span class=\"o_stat_text\">Marża brutto</span>"
-
-#. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_account__message_needaction
 msgid "Action Needed"
-msgstr "Wymagane działanie"
+msgstr "Wymagana akcja"
 
 #. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_account__active
@@ -95,7 +87,6 @@ msgid "Analytic Account Groups"
 msgstr "Analityczne grupy kont"
 
 #. module: analytic
-#: model:ir.model.fields,field_description:analytic.field_res_config_settings__group_analytic_accounting
 #: model:res.groups,name:analytic.group_analytic_accounting
 msgid "Analytic Accounting"
 msgstr "Księgowość analityczna"
@@ -164,9 +155,7 @@ msgid "Analytic Tags"
 msgstr "Znaczniki analityczne"
 
 #. module: analytic
-#: model_terms:ir.ui.view,arch_db:analytic.account_analytic_tag_form_view
 #: model_terms:ir.ui.view,arch_db:analytic.account_analytic_tag_view_search
-#: model_terms:ir.ui.view,arch_db:analytic.view_account_analytic_account_form
 #: model_terms:ir.ui.view,arch_db:analytic.view_account_analytic_account_search
 msgid "Archived"
 msgstr "Zarchiwizowane"
@@ -179,7 +168,7 @@ msgstr "Przypisany partner"
 #. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_account__message_attachment_count
 msgid "Attachment Count"
-msgstr "Liczba załączników"
+msgstr "Ilość Załączników"
 
 #. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_account__balance
@@ -193,8 +182,7 @@ msgid "Balance:"
 msgstr "Saldo:"
 
 #. module: analytic
-#: model:ir.model.fields,field_description:analytic.field_account_analytic_line__category
-#: model_terms:ir.ui.view,arch_db:analytic.view_account_analytic_line_filter
+#: model:ir.model.fields,field_description:analytic.field_account_analytic_line__product_uom_category_id
 msgid "Category"
 msgstr "Kategoria"
 
@@ -232,11 +220,6 @@ msgid "Complete Name"
 msgstr "Pełna nazwa"
 
 #. module: analytic
-#: model:ir.model,name:analytic.model_res_config_settings
-msgid "Config Settings"
-msgstr "Ustawienia konfiguracji"
-
-#. module: analytic
 #: model:ir.model.fields,help:analytic.field_account_analytic_line__product_uom_category_id
 msgid ""
 "Conversion between Units of Measure can only occur if they belong to the "
@@ -244,6 +227,16 @@ msgid ""
 msgstr ""
 "Konwersja pomiędzy jednostkami miary (JM) może nastąpić tylko pomiędzy "
 "jednostkami z tej samej kategorii. Do konwersji jest stosowany przelicznik."
+
+#. module: analytic
+#: model_terms:ir.ui.view,arch_db:analytic.view_account_analytic_account_form
+msgid "Cost/Revenue"
+msgstr "Koszt/Przychód"
+
+#. module: analytic
+#: model:ir.actions.act_window,name:analytic.account_analytic_line_action
+msgid "Costs & Revenues"
+msgstr "Koszty i przychody"
 
 #. module: analytic
 #: model_terms:ir.actions.act_window,help:analytic.account_analytic_line_action
@@ -323,14 +316,14 @@ msgid "Followers"
 msgstr "Obserwatorzy"
 
 #. module: analytic
+#: model:ir.model.fields,field_description:analytic.field_account_analytic_account__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Obserwatorzy (kanały)"
+
+#. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_account__message_partner_ids
 msgid "Followers (Partners)"
 msgstr "Obserwatorzy (partnerzy)"
-
-#. module: analytic
-#: model:ir.actions.act_window,name:analytic.account_analytic_line_action
-msgid "Gross Margin"
-msgstr "Marża brutto"
 
 #. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_account__group_id
@@ -345,11 +338,6 @@ msgid "Group By..."
 msgstr "Grupuj wg..."
 
 #. module: analytic
-#: model:ir.model.fields,field_description:analytic.field_account_analytic_account__has_message
-msgid "Has Message"
-msgstr "Ma wiadomość"
-
-#. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_account__id
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_distribution__id
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_group__id
@@ -362,13 +350,14 @@ msgstr "ID"
 #: model:ir.model.fields,help:analytic.field_account_analytic_account__message_needaction
 #: model:ir.model.fields,help:analytic.field_account_analytic_account__message_unread
 msgid "If checked, new messages require your attention."
-msgstr "Jeśli zaznaczone, nowe wiadomości wymagają twojej uwagi."
+msgstr "Jeśli zaznaczone, to nowa wiadomość wymaga twojej uwagi."
 
 #. module: analytic
 #: model:ir.model.fields,help:analytic.field_account_analytic_account__message_has_error
 msgid "If checked, some messages have a delivery error."
 msgstr ""
-"Jeśli zaznaczone, niektóre wiadomości napotkały błędy podczas doręczenia."
+"Jeśli zaznaczone, to część wiadomości napotkało na błąd przy próbie "
+"doręczenia."
 
 #. module: analytic
 #: model:ir.model.fields,help:analytic.field_account_analytic_account__active
@@ -426,7 +415,7 @@ msgstr "Data ostatniej aktualizacji"
 #. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_account__message_main_attachment_id
 msgid "Main Attachment"
-msgstr "Główny załącznik"
+msgstr "Główny Załącznik"
 
 #. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_account__message_has_error
@@ -473,17 +462,12 @@ msgstr "Liczba wiadomości wymagających akcji"
 #. module: analytic
 #: model:ir.model.fields,help:analytic.field_account_analytic_account__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr "Liczba wiadomości z błędami przy doręczeniu"
+msgstr "Ilość wiadomości z błędami przy doręczeniu"
 
 #. module: analytic
 #: model:ir.model.fields,help:analytic.field_account_analytic_account__message_unread_counter
 msgid "Number of unread messages"
 msgstr "Liczba nieprzeczytanych wiadomości"
-
-#. module: analytic
-#: model:ir.model.fields.selection,name:analytic.selection__account_analytic_line__category__other
-msgid "Other"
-msgstr "Inne"
 
 #. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_group__parent_id
@@ -596,11 +580,6 @@ msgstr "Nieprzeczytane wiadomości"
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_account__message_unread_counter
 msgid "Unread Messages Counter"
 msgstr "Licznik nieprzeczytanych wiadomości"
-
-#. module: analytic
-#: model:ir.model.fields,field_description:analytic.field_account_analytic_line__product_uom_category_id
-msgid "UoM Category"
-msgstr ""
 
 #. module: analytic
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_line__user_id

@@ -3,16 +3,18 @@
 # 	* hr_recruitment_survey
 # 
 # Translators:
-# Martin Trigaux, 2021
-# ILMIR <karamov@it-projects.info>, 2021
+# Martin Trigaux, 2020
+# Vasiliy Korobatov <korobatov@gmail.com>, 2020
+# ILMIR <karamov@it-projects.info>, 2020
+# Irina Fedulova <istartlin@gmail.com>, 2020
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~14.5\n"
+"Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-14 10:28+0000\n"
-"PO-Revision-Date: 2021-09-14 12:23+0000\n"
-"Last-Translator: ILMIR <karamov@it-projects.info>, 2021\n"
+"POT-Creation-Date: 2020-09-29 13:45+0000\n"
+"PO-Revision-Date: 2020-09-07 08:13+0000\n"
+"Last-Translator: Irina Fedulova <istartlin@gmail.com>, 2020\n"
 "Language-Team: Russian (https://www.transifex.com/odoo/teams/41243/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -64,6 +66,15 @@ msgid ""
 msgstr ""
 
 #. module: hr_recruitment_survey
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_survey.hr_applicant_view_form_inherit
+msgid ""
+"<span class=\"o_stat_text\">Start</span>\n"
+"                        <span class=\"o_stat_text\">Interview</span>"
+msgstr ""
+"<span class=\"o_stat_text\">Начать</span>\n"
+"                        <span class=\"o_stat_text\">Интервью</span>"
+
+#. module: hr_recruitment_survey
 #: model:survey.question,title:hr_recruitment_survey.survey_recruitment_form_p1
 msgid "About you"
 msgstr ""
@@ -74,9 +85,12 @@ msgid "Activities"
 msgstr "Действия"
 
 #. module: hr_recruitment_survey
+#: model_terms:ir.ui.view,arch_db:hr_recruitment_survey.hr_applicant_view_form_inherit
+msgid "Answer related job question"
+msgstr "Ответить на вопрос, связанный с вакансией"
+
+#. module: hr_recruitment_survey
 #: model:ir.model,name:hr_recruitment_survey.model_hr_applicant
-#: model:ir.model.fields,field_description:hr_recruitment_survey.field_survey_invite__applicant_id
-#: model:ir.model.fields,field_description:hr_recruitment_survey.field_survey_user_input__applicant_id
 msgid "Applicant"
 msgstr "Соискатель"
 
@@ -101,6 +115,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:hr_recruitment_survey.view_hr_job_kanban_inherit
 msgid "Display Interview Form"
 msgstr "Открыть схему собеседования"
+
+#. module: hr_recruitment_survey
+#: model:ir.model.fields,field_description:hr_recruitment_survey.field_hr_applicant__display_name
+#: model:ir.model.fields,field_description:hr_recruitment_survey.field_hr_job__display_name
+msgid "Display Name"
+msgstr "Отображаемое имя"
 
 #. module: hr_recruitment_survey
 #: model:survey.question,title:hr_recruitment_survey.survey_recruitment_form_p1_q4
@@ -138,6 +158,12 @@ msgid "Having freebies such as tea, coffee and stationery"
 msgstr ""
 
 #. module: hr_recruitment_survey
+#: model:ir.model.fields,field_description:hr_recruitment_survey.field_hr_applicant__id
+#: model:ir.model.fields,field_description:hr_recruitment_survey.field_hr_job__id
+msgid "ID"
+msgstr "Идентификатор"
+
+#. module: hr_recruitment_survey
 #: model:survey.question,comments_message:hr_recruitment_survey.survey_recruitment_form_p1
 #: model:survey.question,comments_message:hr_recruitment_survey.survey_recruitment_form_p1_q1
 #: model:survey.question,comments_message:hr_recruitment_survey.survey_recruitment_form_p1_q2
@@ -168,8 +194,8 @@ msgstr ""
 
 #. module: hr_recruitment_survey
 #: model_terms:ir.ui.view,arch_db:hr_recruitment_survey.res_config_settings_view_form
-msgid "Interview Survey"
-msgstr ""
+msgid "Interview Forms"
+msgstr "Формы интервью"
 
 #. module: hr_recruitment_survey
 #: model:ir.model,name:hr_recruitment_survey.model_hr_job
@@ -180,6 +206,12 @@ msgstr "Должность"
 #: model:survey.question,title:hr_recruitment_survey.survey_recruitment_form_p1_q6
 msgid "Knowledge"
 msgstr "Знания"
+
+#. module: hr_recruitment_survey
+#: model:ir.model.fields,field_description:hr_recruitment_survey.field_hr_applicant____last_update
+#: model:ir.model.fields,field_description:hr_recruitment_survey.field_hr_job____last_update
+msgid "Last Modified on"
+msgstr "Последнее изменение"
 
 #. module: hr_recruitment_survey
 #: model:survey.question.answer,value:hr_recruitment_survey.survey_recruitment_form_p1_q8_row6
@@ -218,18 +250,8 @@ msgstr "Ответ"
 
 #. module: hr_recruitment_survey
 #: model_terms:ir.ui.view,arch_db:hr_recruitment_survey.hr_applicant_view_form_inherit
-msgid "SEND INTERVIEW"
-msgstr ""
-
-#. module: hr_recruitment_survey
-#: model_terms:ir.ui.view,arch_db:hr_recruitment_survey.hr_applicant_view_form_inherit
 msgid "See interview report"
 msgstr ""
-
-#. module: hr_recruitment_survey
-#: model:ir.model.fields,field_description:hr_recruitment_survey.field_hr_applicant__response_state
-msgid "Status"
-msgstr "Статус"
 
 #. module: hr_recruitment_survey
 #: code:addons/hr_recruitment_survey/models/hr_job.py:0
@@ -237,16 +259,6 @@ msgstr "Статус"
 #, python-format
 msgid "Survey"
 msgstr "Опрос"
-
-#. module: hr_recruitment_survey
-#: model:ir.model,name:hr_recruitment_survey.model_survey_invite
-msgid "Survey Invitation Wizard"
-msgstr ""
-
-#. module: hr_recruitment_survey
-#: model:ir.model,name:hr_recruitment_survey.model_survey_user_input
-msgid "Survey User Input"
-msgstr "Опрос пользователей ввод"
 
 #. module: hr_recruitment_survey
 #: model_terms:survey.survey,description_done:hr_recruitment_survey.survey_recruitment_form
@@ -264,24 +276,6 @@ msgstr ""
 #: model:survey.question,validation_error_msg:hr_recruitment_survey.survey_recruitment_form_p1_q7
 #: model:survey.question,validation_error_msg:hr_recruitment_survey.survey_recruitment_form_p1_q8
 msgid "The answer you entered is not valid."
-msgstr ""
-
-#. module: hr_recruitment_survey
-#: code:addons/hr_recruitment_survey/models/survey_invite.py:0
-#, python-format
-msgid "The applicant \"%s\" has finished the survey."
-msgstr ""
-
-#. module: hr_recruitment_survey
-#: code:addons/hr_recruitment_survey/models/survey_invite.py:0
-#, python-format
-msgid "The survey %(survey_link)s has been sent to %(partner_link)s"
-msgstr ""
-
-#. module: hr_recruitment_survey
-#: code:addons/hr_recruitment_survey/models/survey_invite.py:0
-#, python-format
-msgid "The survey has been sent to \"%s\"."
 msgstr ""
 
 #. module: hr_recruitment_survey
@@ -320,10 +314,4 @@ msgstr ""
 #. module: hr_recruitment_survey
 #: model:survey.question.answer,value:hr_recruitment_survey.survey_recruitment_form_p1_q8_row4
 msgid "Working with state of the art technology"
-msgstr ""
-
-#. module: hr_recruitment_survey
-#: code:addons/hr_recruitment_survey/models/hr_applicant.py:0
-#, python-format
-msgid "You must define a Contact Name for this applicant."
 msgstr ""
