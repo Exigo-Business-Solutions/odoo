@@ -4,6 +4,7 @@ Contributing to Odoo
 [Full contribution guidelines](https://github.com/odoo/odoo/wiki/Contributing)
 
 TL;DR
+dfasdasdfasdf
 
 * If you [make a pull request](https://github.com/odoo/odoo/wiki/Contributing#making-pull-requests),
   do not create an issue! Use the PR description for that
