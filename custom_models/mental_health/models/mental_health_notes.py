@@ -11,4 +11,6 @@ class MentalHealthNotes(models.Model):
     icd10_codes = fields.Selection(string='ICD10 Code', required=False, copy=False,
                                    selection=[('f40.00', 'F40.00 - Agoraphobia unspecified'),
                                               ('f40.01', 'F40.01 - Agoraphobia with panic disorder')])
+    rescheduled = fields.Datetime(string='Rescheduled?',
+                                  default=lambda self: fields.Datetime.now() + fields.Datetime.add(days=+ 7))
     homework = fields.Text(string='Homework Assignment')
