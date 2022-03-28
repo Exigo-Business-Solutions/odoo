@@ -2,6 +2,7 @@
     'name': 'Mental Health Notes',
     'depends': [
         'base',
+        'contacts'
     ],
     'data': [
         'data/ir.model.access.csv',
