@@ -1,10 +1,9 @@
 <?xml version="1.0"?>
 <odoo>
     <record id="mental_health_notes_default_action" model="ir.actions.act_window">
-        <field name="name">Properties</field>
+        <field name="name">Mental Health Notes</field>
         <field name="res_model">mental_health.notes</field>
         <field name="view_mode">tree,form</field>
-
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
                 You don't have any notes associated with your account!
@@ -14,17 +13,53 @@
                 sessions with a therapist.
             </p>
         </field>
+        <field name="domain">[('search_ids','=',1)]</field>
     </record>
 
     <record id="mental_health_notes_view_tree" model="ir.ui.view">
         <field name="name">Mental Health Notes</field>
         <field name="model">mental_health.notes</field>
         <field name="arch" type="xml">
-            <tree string="Properties">
-                <field name="name"/>
+            <tree string="Notes">
+                <field name="client"/>
                 <field name="date"/>
                 <field name="icd10_codes"/>
             </tree>
+        </field>
+    </record>
+
+    <record id="mental_health_notes_view_form" model="ir.ui.view">
+        <field name="name">Mental Health Notes</field>
+        <field name="model">mental_health.notes</field>
+        <field name="arch" type="xml">
+            <form string="Notes (Maybe I'll see this string one day)">
+                <sheet>
+                    <group>
+                        <field name="client"/>
+                        <field name="mode_of_therapy"/>
+                        <field name="date"/>
+                        <field name="arrival_status"/>
+                        <field name="service_type"/>
+                        <field name="icd10_codes"/>
+                        <field name="description"/>
+                        <field name="thought_process"/>
+                        <field name="suicidal_homicidal"/>
+                        <field name="insight"/>
+                        <field name="participation"/>
+                        <field name="motivation"/>
+                        <field name="affect"/>
+                        <field name="symptom_change"/>
+                        <field name="diagnosis_selection"/>
+                        <field name="judgment"/>
+                        <field name="eating"/>
+                        <field name="sleep_quality"/>
+                        <field name="mood"/>
+                        <field name="homework"/>
+                        <field name="therapist_id" attrs="{'invisible': 1}"/>
+                        <field name="search_ids" attrs="{'invisible': 1}"/>
+                    </group>
+                </sheet>
+            </form>
         </field>
     </record>
 </odoo>

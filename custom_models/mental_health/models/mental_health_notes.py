@@ -5,7 +5,7 @@ class MentalHealthNotes(models.Model):
     _name = "mental_health.notes"
     _description = "A model to be used to write mental health notes"
 
-    name = fields.Many2one(comodel_name='res.partner', required=True, copy=True)
+    client = fields.Many2one(comodel_name='res.users', required=True, copy=True)
     mode_of_therapy = fields.Selection(string='Mode of Therapy', required=True,
                                        selection=[('in_person', 'In Person'),
                                                   ('by_phone', 'By Phone'),
@@ -131,3 +131,14 @@ class MentalHealthNotes(models.Model):
                             default='normal',
                             help='Select the mood of the client.')
     homework = fields.Text(string='Homework Assignment')
+    therapist_id = fields.Text(string="Therapist Id", invisible=True, default=lambda self: self.env.uid, required=True, copy=False)
+
+    search_ids = fields.Char(compute="_compute_search_ids", search='_search_ids_search')
+
+    def _compute_search_ids(self):
+        for note in self:
+            note.search_ids = (note.therapist_id == self.env.uid) or (note.client.id == self.env.uid)
+
+    def _search_ids_search(self, operator, operand):
+        obj = self.env['mental_health.notes'].search(['|', ('therapist_id', '=', self.env.uid), ('client', '=', self.env.uid)]).ids
+        return [('id', 'in', obj)]
