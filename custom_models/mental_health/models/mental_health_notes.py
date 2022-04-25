@@ -137,7 +137,6 @@ class MentalHealthNotes(models.Model):
 
     def _compute_search_ids(self):
         for note in self:
-            print("LOOK AT THIS: " + str(note.client))
             note.search_ids = (note.therapist_id == self.env.uid) or (note.client.id == self.env.uid)
 
     def _search_ids_search(self, operator, operand):
