@@ -10,10 +10,11 @@ class TherapistAssignments(models.Model):
                                 # domain=lambda self: [("group_ids", "=",
                                 #                       self.env.ref(
                                 #                           "mental_health.group_mental_health_therapist").id)],
-                                required=True)
+                                required=True, domain=lambda self: [('groups_id', '=', self.env.ref('mental_health.group_mental_health_therapist').id)])
 
     assigned_clients = fields.Many2many('res.users', 'assigned_clients_rel', 'client_id', string="Assigned Clients",
                                         # domain=lambda self: [("group_ids", "=",
                                         #                       self.env.ref(
                                         #                           "mental_health.group_mental_health_user").id)],
-                                        required=True)
+                                        required=True, domain=lambda self: [
+            ('groups_id', '=', self.env.ref('mental_health.group_mental_health_user').id)])
