@@ -1,4 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-therapists.access_assignment_admin,access_assignment_admin,model_therapists,mental_health.group_mental_health_admin,1,1,1,1
-therapists.access_assignment_client,access_assignment_client,model_therapists,mental_health.group_mental_health_user,0,0,0,0
-therapists.access_assignment_therapist,access_assignment_therapist,model_therapists,mental_health.group_mental_health_therapist,0,0,0,0
+therapists.access_assignment_admin,access_assignment_admin,model_therapists,base.group_user,1,1,1,1
