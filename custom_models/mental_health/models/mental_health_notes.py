@@ -28,9 +28,7 @@ class MentalHealthNotes(models.Model):
                                                ('individual_therapy', 'Individual Therapy')],
                                     default='individual_therapy',
                                     help='Select the type of service provided.')
-    icd10_codes = fields.Selection(string='ICD10 Code', required=False, copy=False,
-                                   selection=[('f40.00', 'F40.00 - Agoraphobia unspecified'),
-                                              ('f40.01', 'F40.01 - Agoraphobia with panic disorder')])
+    icd10_code = fields.Many2one(string='ICD10 Code', comodel_name='icd10', required=False, copy=False)
     description = fields.Text(string='Meeting Notes', copy=False)
     thought_process = fields.Selection(string='Thought Process', required=True, copy=False,
                                        selection=[('normal', 'Normal'),
