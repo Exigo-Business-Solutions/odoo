@@ -18,3 +18,21 @@ class TherapistAssignments(models.Model):
                                         #                           "mental_health.group_mental_health_user").id)],
                                         required=True, domain=lambda self: [
             ('groups_id', '=', self.env.ref('mental_health.group_mental_health_user').id)])
+
+    search_ids = fields.Char(compute="_compute_search_ids", search="_search_ids_search")
+
+    def _compute_search_ids(self):
+        for therapists in self:
+            therapists.search_ids = (therapists.therapist == self.env.uid) or self.env['res.users'].browse(self.env.uid).has_group('therapists.group_therapists_admin')
+
+    def _search_ids_search(self, operator, operand):
+
+        #Allow therapists to view their own assignments
+        obj = self.env['therapists'].search(
+            [('therapist', '=', self.env.uid)]).ids
+
+        #Allow admins to view all records
+        if self.env['res.users'].browse(self.env.uid).has_group('therapists.group_therapists_admin'):
+            obj = self.env['therapists'].search([]).ids
+
+        return [('id', 'in', obj)]
