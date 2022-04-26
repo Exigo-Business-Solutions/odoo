@@ -23,7 +23,7 @@
             <tree string="Notes">
                 <field name="client"/>
                 <field name="date"/>
-                <field name="icd10_codes"/>
+                <field name="icd10_code"/>
             </tree>
         </field>
     </record>
