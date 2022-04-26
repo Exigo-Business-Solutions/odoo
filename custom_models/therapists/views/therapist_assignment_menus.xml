@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<odoo>
+    <menuitem id="therapist_assignment_menu_root" name="Therapist Assignment">
+        <menuitem id="therapist_assignment_first_level_menu" name="Assignment">
+            <menuitem id="therapist_assignment_default_menu_action" action="therapist_assignment_default_action"/>
+        </menuitem>
+    </menuitem>
+</odoo>

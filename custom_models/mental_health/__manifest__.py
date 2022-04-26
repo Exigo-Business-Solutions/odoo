@@ -5,6 +5,7 @@
         'base',
         'contacts',
         'icd10',
+        'therapists',
     ],
     'data': [
         'security/mental_health_security.xml',
