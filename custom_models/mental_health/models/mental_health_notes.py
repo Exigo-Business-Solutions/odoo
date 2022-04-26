@@ -134,7 +134,6 @@ class MentalHealthNotes(models.Model):
     search_ids = fields.Char(compute="_compute_search_ids", search='_search_ids_search')
 
     def _compute_search_ids(self):
-        print("LOOK AT ME: " + str(self.env.ref('icd10.icd10_name')))
         for note in self:
             note.search_ids = (note.therapist_id == self.env.uid) or (note.client.id == self.env.uid)
 
