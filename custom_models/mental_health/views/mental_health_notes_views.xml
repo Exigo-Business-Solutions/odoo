@@ -40,7 +40,7 @@
                         <field name="date"/>
                         <field name="arrival_status"/>
                         <field name="service_type"/>
-                        <field name="icd10_codes"/>
+                        <field name="icd10_code"/>
                         <field name="description"/>
                         <field name="thought_process"/>
                         <field name="suicidal_homicidal"/>

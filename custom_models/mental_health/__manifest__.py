@@ -1,8 +1,10 @@
 {
     'name': 'Mental Health Notes',
+    'license': 'LGPL-3',
     'depends': [
         'base',
         'contacts',
+        'icd10',
     ],
     'data': [
         'security/mental_health_security.xml',
