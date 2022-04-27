@@ -13,6 +13,7 @@
                 sessions with a therapist.
             </p>
         </field>
+        <!--Restrict access to viewing the content based on the value of `search_ids` in the mental health module-->
         <field name="domain">[('search_ids','=',1)]</field>
     </record>
 

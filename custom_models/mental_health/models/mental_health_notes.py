@@ -1,3 +1,9 @@
+# This code has been written as part of an academic project with the education of
+# the student team members being the singular goal and therefore the overarching priority of the project.
+# This code should be considered a proof-of-concept rather than a product ready for commercial distribution.
+# This code is being provided “as is” with no warranties, express or implied.
+#
+# Version 0.1 (Pre-Alpha)
 from odoo import fields, models
 
 
@@ -6,7 +12,8 @@ class MentalHealthNotes(models.Model):
     _description = "A model to be used to write mental health notes"
 
     client = fields.Many2one(comodel_name='res.users', required=True, copy=True,
-                             domain=lambda self: [('id', 'in', self.env["therapists"].search([('therapist', '=', self.env.uid)]).assigned_clients.ids)])
+                             domain=lambda self: [('id', 'in', self.env["therapists"].search(
+                                 [('therapist', '=', self.env.uid)]).assigned_clients.ids)])
     mode_of_therapy = fields.Selection(string='Mode of Therapy', required=True,
                                        selection=[('in_person', 'In Person'),
                                                   ('by_phone', 'By Phone'),

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data noupdate="0">
+        <!--Add the therapist assignment groups as a category for admins to assign user groups to users-->
         <record model="ir.module.category" id="module_category_therapists">
             <field name="name">Therapist Assignment Permissions</field>
             <field name="description">An application for assigning therapists to clients.</field>
             <field name="sequence">1</field>
         </record>
 
+        <!--Add the client as the base group, as it has the most restricted access to the module-->
         <record id="therapists.group_therapists_client" model="res.groups">
             <field name="name">Client</field>
             <field name="comment">Client Permission Group</field>
@@ -14,6 +16,7 @@
             <field name="category_id" ref="module_category_therapists"/>
         </record>
 
+        <!--Add the therapist as the second group, as it has slightly more access to the module-->
         <record id="therapists.group_therapists_therapist" model="res.groups">
             <field name="name">Therapist</field>
             <field name="comment">Therapist Permission Group</field>
@@ -21,6 +24,7 @@
             <field name="category_id" ref="module_category_therapists"/>
         </record>
 
+        <!--Add the admin as the base group, as it has unrestricted access to the module-->
         <record id="therapists.group_therapists_admin" model="res.groups">
             <field name="name">Admin</field>
             <field name="comment">Admin Permission Group</field>
