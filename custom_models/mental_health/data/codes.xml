@@ -1,0 +1,2318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="F01.50" model="mental.health.notes">
+            <field name="name">Vascular dementia without behavioral disturbance</field>
+        </record>
+        <record id="F01.51" model="mental.health.notes">
+            <field name="name">Vascular dementia with behavioral disturbance</field>
+        </record>
+        <record id="F02.80" model="mental.health.notes">
+            <field name="name">Dementia in other diseases classified elsewhere without behavioral disturbance</field>
+        </record>
+        <record id="F02.81" model="mental.health.notes">
+            <field name="name">Dementia in other diseases classified elsewhere with behavioral disturbance</field>
+        </record>
+        <record id="F03.90" model="mental.health.notes">
+            <field name="name">Unspecified dementia without behavioral disturbance</field>
+        </record>
+        <record id="F03.91" model="mental.health.notes">
+            <field name="name">Unspecified dementia with behavioral disturbance</field>
+        </record>
+        <record id="F04" model="mental.health.notes">
+            <field name="name">Amnestic disorder due to known physiological condition</field>
+        </record>
+        <record id="F05" model="mental.health.notes">
+            <field name="name">Delirium due to known physiological condition</field>
+        </record>
+        <record id="F06.0" model="mental.health.notes">
+            <field name="name">Psychotic disorder with hallucinations due to known physiological condition</field>
+        </record>
+        <record id="F06.1" model="mental.health.notes">
+            <field name="name">Catatonic disorder due to known physiological condition</field>
+        </record>
+        <record id="F06.2" model="mental.health.notes">
+            <field name="name">Psychotic disorder with delusions due to known physiological condition</field>
+        </record>
+        <record id="F06.30" model="mental.health.notes">
+            <field name="name">Mood disorder due to known physiological condition, unspecified</field>
+        </record>
+        <record id="F06.31" model="mental.health.notes">
+            <field name="name">Mood disorder due to known physiological condition with depressive features</field>
+        </record>
+        <record id="F06.32" model="mental.health.notes">
+            <field name="name">Mood disorder due to known physiological condition with major depressive-like episode</field>
+        </record>
+        <record id="F06.33" model="mental.health.notes">
+            <field name="name">Mood disorder due to known physiological condition with manic features</field>
+        </record>
+        <record id="F06.34" model="mental.health.notes">
+            <field name="name">Mood disorder due to known physiological condition with mixed features</field>
+        </record>
+        <record id="F06.4" model="mental.health.notes">
+            <field name="name">Anxiety disorder due to known physiological condition</field>
+        </record>
+        <record id="F06.8" model="mental.health.notes">
+            <field name="name">Other specified mental disorders due to known physiological condition</field>
+        </record>
+        <record id="F07.0" model="mental.health.notes">
+            <field name="name">Personality change due to known physiological condition</field>
+        </record>
+        <record id="F07.81" model="mental.health.notes">
+            <field name="name">Postconcussional syndrome</field>
+        </record>
+        <record id="F07.89" model="mental.health.notes">
+            <field name="name">Other personality and behavioral disorders due to known physiological condition</field>
+        </record>
+        <record id="F07.9" model="mental.health.notes">
+            <field name="name">Unspecified personality and behavioral disorder due to known physiological condition</field>
+        </record>
+        <record id="F09" model="mental.health.notes">
+            <field name="name">Unspecified mental disorder due to known physiological condition</field>
+        </record>
+        <record id="F10.10" model="mental.health.notes">
+            <field name="name">Alcohol abuse, uncomplicated</field>
+        </record>
+        <record id="F10.11" model="mental.health.notes">
+            <field name="name">Alcohol abuse, in remission</field>
+        </record>
+        <record id="F10.120" model="mental.health.notes">
+            <field name="name">Alcohol abuse with intoxication, uncomplicated</field>
+        </record>
+        <record id="F10.121" model="mental.health.notes">
+            <field name="name">Alcohol abuse with intoxication delirium</field>
+        </record>
+        <record id="F10.129" model="mental.health.notes">
+            <field name="name">Alcohol abuse with intoxication, unspecified</field>
+        </record>
+        <record id="F10.130" model="mental.health.notes">
+            <field name="name">Alcohol abuse with withdrawal, uncomplicated</field>
+        </record>
+        <record id="F10.131" model="mental.health.notes">
+            <field name="name">Alcohol abuse with withdrawal delirium</field>
+        </record>
+        <record id="F10.132" model="mental.health.notes">
+            <field name="name">Alcohol abuse with withdrawal with perceptual disturbance</field>
+        </record>
+        <record id="F10.139" model="mental.health.notes">
+            <field name="name">Alcohol abuse with withdrawal, unspecified</field>
+        </record>
+        <record id="F10.14" model="mental.health.notes">
+            <field name="name">Alcohol abuse with alcohol-induced mood disorder</field>
+        </record>
+        <record id="F10.150" model="mental.health.notes">
+            <field name="name">Alcohol abuse with alcohol-induced psychotic disorder with delusions</field>
+        </record>
+        <record id="F10.151" model="mental.health.notes">
+            <field name="name">Alcohol abuse with alcohol-induced psychotic disorder with hallucinations</field>
+        </record>
+        <record id="F10.159" model="mental.health.notes">
+            <field name="name">Alcohol abuse with alcohol-induced psychotic disorder, unspecified</field>
+        </record>
+        <record id="F10.180" model="mental.health.notes">
+            <field name="name">Alcohol abuse with alcohol-induced anxiety disorder</field>
+        </record>
+        <record id="F10.181" model="mental.health.notes">
+            <field name="name">Alcohol abuse with alcohol-induced sexual dysfunction</field>
+        </record>
+        <record id="F10.182" model="mental.health.notes">
+            <field name="name">Alcohol abuse with alcohol-induced sleep disorder</field>
+        </record>
+        <record id="F10.188" model="mental.health.notes">
+            <field name="name">Alcohol abuse with other alcohol-induced disorder</field>
+        </record>
+        <record id="F10.19" model="mental.health.notes">
+            <field name="name">Alcohol abuse with unspecified alcohol-induced disorder</field>
+        </record>
+        <record id="F10.20" model="mental.health.notes">
+            <field name="name">Alcohol dependence, uncomplicated</field>
+        </record>
+        <record id="F10.21" model="mental.health.notes">
+            <field name="name">Alcohol dependence, in remission</field>
+        </record>
+        <record id="F10.220" model="mental.health.notes">
+            <field name="name">Alcohol dependence with intoxication, uncomplicated</field>
+        </record>
+        <record id="F10.221" model="mental.health.notes">
+            <field name="name">Alcohol dependence with intoxication delirium</field>
+        </record>
+        <record id="F10.229" model="mental.health.notes">
+            <field name="name">Alcohol dependence with intoxication, unspecified</field>
+        </record>
+        <record id="F10.230" model="mental.health.notes">
+            <field name="name">Alcohol dependence with withdrawal, uncomplicated</field>
+        </record>
+        <record id="F10.231" model="mental.health.notes">
+            <field name="name">Alcohol dependence with withdrawal delirium</field>
+        </record>
+        <record id="F10.232" model="mental.health.notes">
+            <field name="name">Alcohol dependence with withdrawal with perceptual disturbance</field>
+        </record>
+        <record id="F10.239" model="mental.health.notes">
+            <field name="name">Alcohol dependence with withdrawal, unspecified</field>
+        </record>
+        <record id="F10.24" model="mental.health.notes">
+            <field name="name">Alcohol dependence with alcohol-induced mood disorder</field>
+        </record>
+        <record id="F10.250" model="mental.health.notes">
+            <field name="name">Alcohol dependence with alcohol-induced psychotic disorder with delusions</field>
+        </record>
+        <record id="F10.251" model="mental.health.notes">
+            <field name="name">Alcohol dependence with alcohol-induced psychotic disorder with hallucinations</field>
+        </record>
+        <record id="F10.259" model="mental.health.notes">
+            <field name="name">Alcohol dependence with alcohol-induced psychotic disorder, unspecified</field>
+        </record>
+        <record id="F10.26" model="mental.health.notes">
+            <field name="name">Alcohol dependence with alcohol-induced persisting amnestic disorder</field>
+        </record>
+        <record id="F10.27" model="mental.health.notes">
+            <field name="name">Alcohol dependence with alcohol-induced persisting dementia</field>
+        </record>
+        <record id="F10.280" model="mental.health.notes">
+            <field name="name">Alcohol dependence with alcohol-induced anxiety disorder</field>
+        </record>
+        <record id="F10.281" model="mental.health.notes">
+            <field name="name">Alcohol dependence with alcohol-induced sexual dysfunction</field>
+        </record>
+        <record id="F10.282" model="mental.health.notes">
+            <field name="name">Alcohol dependence with alcohol-induced sleep disorder</field>
+        </record>
+        <record id="F10.288" model="mental.health.notes">
+            <field name="name">Alcohol dependence with other alcohol-induced disorder</field>
+        </record>
+        <record id="F10.29" model="mental.health.notes">
+            <field name="name">Alcohol dependence with unspecified alcohol-induced disorder</field>
+        </record>
+        <record id="F10.920" model="mental.health.notes">
+            <field name="name">Alcohol use, unspecified with intoxication, uncomplicated</field>
+        </record>
+        <record id="F10.921" model="mental.health.notes">
+            <field name="name">Alcohol use, unspecified with intoxication delirium</field>
+        </record>
+        <record id="F10.929" model="mental.health.notes">
+            <field name="name">Alcohol use, unspecified with intoxication, unspecified</field>
+        </record>
+        <record id="F10.930" model="mental.health.notes">
+            <field name="name">Alcohol use, unspecified with withdrawal, uncomplicated</field>
+        </record>
+        <record id="F10.931" model="mental.health.notes">
+            <field name="name">Alcohol use, unspecified with withdrawal delirium</field>
+        </record>
+        <record id="F10.932" model="mental.health.notes">
+            <field name="name">Alcohol use, unspecified with withdrawal with perceptual disturbance</field>
+        </record>
+        <record id="F10.939" model="mental.health.notes">
+            <field name="name">Alcohol use, unspecified with withdrawal, unspecified</field>
+        </record>
+        <record id="F10.94" model="mental.health.notes">
+            <field name="name">Alcohol use, unspecified with alcohol-induced mood disorder</field>
+        </record>
+        <record id="F10.950" model="mental.health.notes">
+            <field name="name">Alcohol use, unspecified with alcohol-induced psychotic disorder with delusions</field>
+        </record>
+        <record id="F10.951" model="mental.health.notes">
+            <field name="name">Alcohol use, unspecified with alcohol-induced psychotic disorder with hallucinations</field>
+        </record>
+        <record id="F10.959" model="mental.health.notes">
+            <field name="name">Alcohol use, unspecified with alcohol-induced psychotic disorder, unspecified</field>
+        </record>
+        <record id="F10.96" model="mental.health.notes">
+            <field name="name">Alcohol use, unspecified with alcohol-induced persisting amnestic disorder</field>
+        </record>
+        <record id="F10.97" model="mental.health.notes">
+            <field name="name">Alcohol use, unspecified with alcohol-induced persisting dementia</field>
+        </record>
+        <record id="F10.980" model="mental.health.notes">
+            <field name="name">Alcohol use, unspecified with alcohol-induced anxiety disorder</field>
+        </record>
+        <record id="F10.981" model="mental.health.notes">
+            <field name="name">Alcohol use, unspecified with alcohol-induced sexual dysfunction</field>
+        </record>
+        <record id="F10.982" model="mental.health.notes">
+            <field name="name">Alcohol use, unspecified with alcohol-induced sleep disorder</field>
+        </record>
+        <record id="F10.988" model="mental.health.notes">
+            <field name="name">Alcohol use, unspecified with other alcohol-induced disorder</field>
+        </record>
+        <record id="F10.99" model="mental.health.notes">
+            <field name="name">Alcohol use, unspecified with unspecified alcohol-induced disorder</field>
+        </record>
+        <record id="F11.10" model="mental.health.notes">
+            <field name="name">Opioid abuse, uncomplicated</field>
+        </record>
+        <record id="F11.11" model="mental.health.notes">
+            <field name="name">Opioid abuse, in remission</field>
+        </record>
+        <record id="F11.120" model="mental.health.notes">
+            <field name="name">Opioid abuse with intoxication, uncomplicated</field>
+        </record>
+        <record id="F11.121" model="mental.health.notes">
+            <field name="name">Opioid abuse with intoxication delirium</field>
+        </record>
+        <record id="F11.122" model="mental.health.notes">
+            <field name="name">Opioid abuse with intoxication with perceptual disturbance</field>
+        </record>
+        <record id="F11.129" model="mental.health.notes">
+            <field name="name">Opioid abuse with intoxication, unspecified</field>
+        </record>
+        <record id="F11.13" model="mental.health.notes">
+            <field name="name">Opioid abuse with withdrawal</field>
+        </record>
+        <record id="F11.14" model="mental.health.notes">
+            <field name="name">Opioid abuse with opioid-induced mood disorder</field>
+        </record>
+        <record id="F11.150" model="mental.health.notes">
+            <field name="name">Opioid abuse with opioid-induced psychotic disorder with delusions</field>
+        </record>
+        <record id="F11.151" model="mental.health.notes">
+            <field name="name">Opioid abuse with opioid-induced psychotic disorder with hallucinations</field>
+        </record>
+        <record id="F11.159" model="mental.health.notes">
+            <field name="name">Opioid abuse with opioid-induced psychotic disorder, unspecified</field>
+        </record>
+        <record id="F11.181" model="mental.health.notes">
+            <field name="name">Opioid abuse with opioid-induced sexual dysfunction</field>
+        </record>
+        <record id="F11.182" model="mental.health.notes">
+            <field name="name">Opioid abuse with opioid-induced sleep disorder</field>
+        </record>
+        <record id="F11.188" model="mental.health.notes">
+            <field name="name">Opioid abuse with other opioid-induced disorder</field>
+        </record>
+        <record id="F11.19" model="mental.health.notes">
+            <field name="name">Opioid abuse with unspecified opioid-induced disorder</field>
+        </record>
+        <record id="F11.20" model="mental.health.notes">
+            <field name="name">Opioid dependence, uncomplicated</field>
+        </record>
+        <record id="F11.21" model="mental.health.notes">
+            <field name="name">Opioid dependence, in remission</field>
+        </record>
+        <record id="F11.220" model="mental.health.notes">
+            <field name="name">Opioid dependence with intoxication, uncomplicated</field>
+        </record>
+        <record id="F11.221" model="mental.health.notes">
+            <field name="name">Opioid dependence with intoxication delirium</field>
+        </record>
+        <record id="F11.222" model="mental.health.notes">
+            <field name="name">Opioid dependence with intoxication with perceptual disturbance</field>
+        </record>
+        <record id="F11.229" model="mental.health.notes">
+            <field name="name">Opioid dependence with intoxication, unspecified</field>
+        </record>
+        <record id="F11.23" model="mental.health.notes">
+            <field name="name">Opioid dependence with withdrawal</field>
+        </record>
+        <record id="F11.24" model="mental.health.notes">
+            <field name="name">Opioid dependence with opioid-induced mood disorder</field>
+        </record>
+        <record id="F11.250" model="mental.health.notes">
+            <field name="name">Opioid dependence with opioid-induced psychotic disorder with delusions</field>
+        </record>
+        <record id="F11.251" model="mental.health.notes">
+            <field name="name">Opioid dependence with opioid-induced psychotic disorder with hallucinations</field>
+        </record>
+        <record id="F11.259" model="mental.health.notes">
+            <field name="name">Opioid dependence with opioid-induced psychotic disorder, unspecified</field>
+        </record>
+        <record id="F11.281" model="mental.health.notes">
+            <field name="name">Opioid dependence with opioid-induced sexual dysfunction</field>
+        </record>
+        <record id="F11.282" model="mental.health.notes">
+            <field name="name">Opioid dependence with opioid-induced sleep disorder</field>
+        </record>
+        <record id="F11.288" model="mental.health.notes">
+            <field name="name">Opioid dependence with other opioid-induced disorder</field>
+        </record>
+        <record id="F11.29" model="mental.health.notes">
+            <field name="name">Opioid dependence with unspecified opioid-induced disorder</field>
+        </record>
+        <record id="F11.90" model="mental.health.notes">
+            <field name="name">Opioid use, unspecified, uncomplicated</field>
+        </record>
+        <record id="F11.920" model="mental.health.notes">
+            <field name="name">Opioid use, unspecified with intoxication, uncomplicated</field>
+        </record>
+        <record id="F11.921" model="mental.health.notes">
+            <field name="name">Opioid use, unspecified with intoxication delirium</field>
+        </record>
+        <record id="F11.922" model="mental.health.notes">
+            <field name="name">Opioid use, unspecified with intoxication with perceptual disturbance</field>
+        </record>
+        <record id="F11.929" model="mental.health.notes">
+            <field name="name">Opioid use, unspecified with intoxication, unspecified</field>
+        </record>
+        <record id="F11.93" model="mental.health.notes">
+            <field name="name">Opioid use, unspecified with withdrawal</field>
+        </record>
+        <record id="F11.94" model="mental.health.notes">
+            <field name="name">Opioid use, unspecified with opioid-induced mood disorder</field>
+        </record>
+        <record id="F11.950" model="mental.health.notes">
+            <field name="name">Opioid use, unspecified with opioid-induced psychotic disorder with delusions</field>
+        </record>
+        <record id="F11.951" model="mental.health.notes">
+            <field name="name">Opioid use, unspecified with opioid-induced psychotic disorder with hallucinations</field>
+        </record>
+        <record id="F11.959" model="mental.health.notes">
+            <field name="name">Opioid use, unspecified with opioid-induced psychotic disorder, unspecified</field>
+        </record>
+        <record id="F11.981" model="mental.health.notes">
+            <field name="name">Opioid use, unspecified with opioid-induced sexual dysfunction</field>
+        </record>
+        <record id="F11.982" model="mental.health.notes">
+            <field name="name">Opioid use, unspecified with opioid-induced sleep disorder</field>
+        </record>
+        <record id="F11.988" model="mental.health.notes">
+            <field name="name">Opioid use, unspecified with other opioid-induced disorder</field>
+        </record>
+        <record id="F11.99" model="mental.health.notes">
+            <field name="name">Opioid use, unspecified with unspecified opioid-induced disorder</field>
+        </record>
+        <record id="F12.10" model="mental.health.notes">
+            <field name="name">Cannabis abuse, uncomplicated</field>
+        </record>
+        <record id="F12.11" model="mental.health.notes">
+            <field name="name">Cannabis abuse, in remission</field>
+        </record>
+        <record id="F12.120" model="mental.health.notes">
+            <field name="name">Cannabis abuse with intoxication, uncomplicated</field>
+        </record>
+        <record id="F12.121" model="mental.health.notes">
+            <field name="name">Cannabis abuse with intoxication delirium</field>
+        </record>
+        <record id="F12.122" model="mental.health.notes">
+            <field name="name">Cannabis abuse with intoxication with perceptual disturbance</field>
+        </record>
+        <record id="F12.129" model="mental.health.notes">
+            <field name="name">Cannabis abuse with intoxication, unspecified</field>
+        </record>
+        <record id="F12.13" model="mental.health.notes">
+            <field name="name">Cannabis abuse with withdrawal</field>
+        </record>
+        <record id="F12.150" model="mental.health.notes">
+            <field name="name">Cannabis abuse with psychotic disorder with delusions</field>
+        </record>
+        <record id="F12.151" model="mental.health.notes">
+            <field name="name">Cannabis abuse with psychotic disorder with hallucinations</field>
+        </record>
+        <record id="F12.159" model="mental.health.notes">
+            <field name="name">Cannabis abuse with psychotic disorder, unspecified</field>
+        </record>
+        <record id="F12.180" model="mental.health.notes">
+            <field name="name">Cannabis abuse with cannabis-induced anxiety disorder</field>
+        </record>
+        <record id="F12.188" model="mental.health.notes">
+            <field name="name">Cannabis abuse with other cannabis-induced disorder</field>
+        </record>
+        <record id="F12.19" model="mental.health.notes">
+            <field name="name">Cannabis abuse with unspecified cannabis-induced disorder</field>
+        </record>
+        <record id="F12.20" model="mental.health.notes">
+            <field name="name">Cannabis dependence, uncomplicated</field>
+        </record>
+        <record id="F12.21" model="mental.health.notes">
+            <field name="name">Cannabis dependence, in remission</field>
+        </record>
+        <record id="F12.220" model="mental.health.notes">
+            <field name="name">Cannabis dependence with intoxication, uncomplicated</field>
+        </record>
+        <record id="F12.221" model="mental.health.notes">
+            <field name="name">Cannabis dependence with intoxication delirium</field>
+        </record>
+        <record id="F12.222" model="mental.health.notes">
+            <field name="name">Cannabis dependence with intoxication with perceptual disturbance</field>
+        </record>
+        <record id="F12.229" model="mental.health.notes">
+            <field name="name">Cannabis dependence with intoxication, unspecified</field>
+        </record>
+        <record id="F12.23" model="mental.health.notes">
+            <field name="name">Cannabis dependence with withdrawal</field>
+        </record>
+        <record id="F12.250" model="mental.health.notes">
+            <field name="name">Cannabis dependence with psychotic disorder with delusions</field>
+        </record>
+        <record id="F12.251" model="mental.health.notes">
+            <field name="name">Cannabis dependence with psychotic disorder with hallucinations</field>
+        </record>
+        <record id="F12.259" model="mental.health.notes">
+            <field name="name">Cannabis dependence with psychotic disorder, unspecified</field>
+        </record>
+        <record id="F12.280" model="mental.health.notes">
+            <field name="name">Cannabis dependence with cannabis-induced anxiety disorder</field>
+        </record>
+        <record id="F12.288" model="mental.health.notes">
+            <field name="name">Cannabis dependence with other cannabis-induced disorder</field>
+        </record>
+        <record id="F12.29" model="mental.health.notes">
+            <field name="name">Cannabis dependence with unspecified cannabis-induced disorder</field>
+        </record>
+        <record id="F12.90" model="mental.health.notes">
+            <field name="name">Cannabis use, unspecified, uncomplicated</field>
+        </record>
+        <record id="F12.920" model="mental.health.notes">
+            <field name="name">Cannabis use, unspecified with intoxication, uncomplicated</field>
+        </record>
+        <record id="F12.921" model="mental.health.notes">
+            <field name="name">Cannabis use, unspecified with intoxication delirium</field>
+        </record>
+        <record id="F12.922" model="mental.health.notes">
+            <field name="name">Cannabis use, unspecified with intoxication with perceptual disturbance</field>
+        </record>
+        <record id="F12.929" model="mental.health.notes">
+            <field name="name">Cannabis use, unspecified with intoxication, unspecified</field>
+        </record>
+        <record id="F12.93" model="mental.health.notes">
+            <field name="name">Cannabis use, unspecified with withdrawal</field>
+        </record>
+        <record id="F12.950" model="mental.health.notes">
+            <field name="name">Cannabis use, unspecified with psychotic disorder with delusions</field>
+        </record>
+        <record id="F12.951" model="mental.health.notes">
+            <field name="name">Cannabis use, unspecified with psychotic disorder with hallucinations</field>
+        </record>
+        <record id="F12.959" model="mental.health.notes">
+            <field name="name">Cannabis use, unspecified with psychotic disorder, unspecified</field>
+        </record>
+        <record id="F12.980" model="mental.health.notes">
+            <field name="name">Cannabis use, unspecified with anxiety disorder</field>
+        </record>
+        <record id="F12.988" model="mental.health.notes">
+            <field name="name">Cannabis use, unspecified with other cannabis-induced disorder</field>
+        </record>
+        <record id="F12.99" model="mental.health.notes">
+            <field name="name">Cannabis use, unspecified with unspecified cannabis-induced disorder</field>
+        </record>
+        <record id="F13.10" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic abuse, uncomplicated</field>
+        </record>
+        <record id="F13.11" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic abuse, in remission</field>
+        </record>
+        <record id="F13.120" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic abuse with intoxication, uncomplicated</field>
+        </record>
+        <record id="F13.121" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic abuse with intoxication delirium</field>
+        </record>
+        <record id="F13.129" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic abuse with intoxication, unspecified</field>
+        </record>
+        <record id="F13.130" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic abuse with withdrawal, uncomplicated</field>
+        </record>
+        <record id="F13.131" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic abuse with withdrawal delirium</field>
+        </record>
+        <record id="F13.132" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic abuse with withdrawal with perceptual disturbance</field>
+        </record>
+        <record id="F13.139" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic abuse with withdrawal, unspecified</field>
+        </record>
+        <record id="F13.14" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic abuse with sedative, hypnotic or anxiolytic-induced mood disorder</field>
+        </record>
+        <record id="F13.150" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic abuse with sedative, hypnotic or anxiolytic-induced psychotic disorder with delusions</field>
+        </record>
+        <record id="F13.151" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic abuse with sedative, hypnotic or anxiolytic-induced psychotic disorder with hallucinations</field>
+        </record>
+        <record id="F13.159" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic abuse with sedative, hypnotic or anxiolytic-induced psychotic disorder, unspecified</field>
+        </record>
+        <record id="F13.180" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic abuse with sedative, hypnotic or anxiolytic-induced anxiety disorder</field>
+        </record>
+        <record id="F13.181" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic abuse with sedative, hypnotic or anxiolytic-induced sexual dysfunction</field>
+        </record>
+        <record id="F13.182" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic abuse with sedative, hypnotic or anxiolytic-induced sleep disorder</field>
+        </record>
+        <record id="F13.188" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic abuse with other sedative, hypnotic or anxiolytic-induced disorder</field>
+        </record>
+        <record id="F13.19" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic abuse with unspecified sedative, hypnotic or anxiolytic-induced disorder</field>
+        </record>
+        <record id="F13.20" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic dependence, uncomplicated</field>
+        </record>
+        <record id="F13.21" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic dependence, in remission</field>
+        </record>
+        <record id="F13.220" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic dependence with intoxication, uncomplicated</field>
+        </record>
+        <record id="F13.221" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic dependence with intoxication delirium</field>
+        </record>
+        <record id="F13.229" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic dependence with intoxication, unspecified</field>
+        </record>
+        <record id="F13.230" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic dependence with withdrawal, uncomplicated</field>
+        </record>
+        <record id="F13.231" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic dependence with withdrawal delirium</field>
+        </record>
+        <record id="F13.232" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic dependence with withdrawal with perceptual disturbance</field>
+        </record>
+        <record id="F13.239" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic dependence with withdrawal, unspecified</field>
+        </record>
+        <record id="F13.24" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic dependence with sedative, hypnotic or anxiolytic-induced mood disorder</field>
+        </record>
+        <record id="F13.250" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic dependence with sedative, hypnotic or anxiolytic-induced psychotic disorder with delusions</field>
+        </record>
+        <record id="F13.251" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic dependence with sedative, hypnotic or anxiolytic-induced psychotic disorder with hallucinations</field>
+        </record>
+        <record id="F13.259" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic dependence with sedative, hypnotic or anxiolytic-induced psychotic disorder, unspecified</field>
+        </record>
+        <record id="F13.26" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic dependence with sedative, hypnotic or anxiolytic-induced persisting amnestic disorder</field>
+        </record>
+        <record id="F13.27" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic dependence with sedative, hypnotic or anxiolytic-induced persisting dementia</field>
+        </record>
+        <record id="F13.280" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic dependence with sedative, hypnotic or anxiolytic-induced anxiety disorder</field>
+        </record>
+        <record id="F13.281" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic dependence with sedative, hypnotic or anxiolytic-induced sexual dysfunction</field>
+        </record>
+        <record id="F13.282" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic dependence with sedative, hypnotic or anxiolytic-induced sleep disorder</field>
+        </record>
+        <record id="F13.288" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic dependence with other sedative, hypnotic or anxiolytic-induced disorder</field>
+        </record>
+        <record id="F13.29" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic dependence with unspecified sedative, hypnotic or anxiolytic-induced disorder</field>
+        </record>
+        <record id="F13.90" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic, or anxiolytic use, unspecified, uncomplicated</field>
+        </record>
+        <record id="F13.920" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic use, unspecified with intoxication, uncomplicated</field>
+        </record>
+        <record id="F13.921" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic use, unspecified with intoxication delirium</field>
+        </record>
+        <record id="F13.929" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic use, unspecified with intoxication, unspecified</field>
+        </record>
+        <record id="F13.930" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic use, unspecified with withdrawal, uncomplicated</field>
+        </record>
+        <record id="F13.931" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic use, unspecified with withdrawal delirium</field>
+        </record>
+        <record id="F13.932" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic use, unspecified with withdrawal with perceptual disturbances</field>
+        </record>
+        <record id="F13.939" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic use, unspecified with withdrawal, unspecified</field>
+        </record>
+        <record id="F13.94" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic use, unspecified with sedative, hypnotic or anxiolytic-induced mood disorder</field>
+        </record>
+        <record id="F13.950" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic use, unspecified with sedative, hypnotic or anxiolytic-induced psychotic disorder with delusions</field>
+        </record>
+        <record id="F13.951" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic use, unspecified with sedative, hypnotic or anxiolytic-induced psychotic disorder with hallucinations</field>
+        </record>
+        <record id="F13.959" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic use, unspecified with sedative, hypnotic or anxiolytic-induced psychotic disorder, unspecified</field>
+        </record>
+        <record id="F13.96" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic use, unspecified with sedative, hypnotic or anxiolytic-induced persisting amnestic disorder</field>
+        </record>
+        <record id="F13.97" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic use, unspecified with sedative, hypnotic or anxiolytic-induced persisting dementia</field>
+        </record>
+        <record id="F13.980" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic use, unspecified with sedative, hypnotic or anxiolytic-induced anxiety disorder</field>
+        </record>
+        <record id="F13.981" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic use, unspecified with sedative, hypnotic or anxiolytic-induced sexual dysfunction</field>
+        </record>
+        <record id="F13.982" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic use, unspecified with sedative, hypnotic or anxiolytic-induced sleep disorder</field>
+        </record>
+        <record id="F13.988" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic use, unspecified with other sedative, hypnotic or anxiolytic-induced disorder</field>
+        </record>
+        <record id="F13.99" model="mental.health.notes">
+            <field name="name">Sedative, hypnotic or anxiolytic use, unspecified with unspecified sedative, hypnotic or anxiolytic-induced disorder</field>
+        </record>
+        <record id="F14.10" model="mental.health.notes">
+            <field name="name">Cocaine abuse, uncomplicated</field>
+        </record>
+        <record id="F14.11" model="mental.health.notes">
+            <field name="name">Cocaine abuse, in remission</field>
+        </record>
+        <record id="F14.120" model="mental.health.notes">
+            <field name="name">Cocaine abuse with intoxication, uncomplicated</field>
+        </record>
+        <record id="F14.121" model="mental.health.notes">
+            <field name="name">Cocaine abuse with intoxication with delirium</field>
+        </record>
+        <record id="F14.122" model="mental.health.notes">
+            <field name="name">Cocaine abuse with intoxication with perceptual disturbance</field>
+        </record>
+        <record id="F14.129" model="mental.health.notes">
+            <field name="name">Cocaine abuse with intoxication, unspecified</field>
+        </record>
+        <record id="F14.13" model="mental.health.notes">
+            <field name="name">Cocaine abuse, unspecified with withdrawal</field>
+        </record>
+        <record id="F14.14" model="mental.health.notes">
+            <field name="name">Cocaine abuse with cocaine-induced mood disorder</field>
+        </record>
+        <record id="F14.150" model="mental.health.notes">
+            <field name="name">Cocaine abuse with cocaine-induced psychotic disorder with delusions</field>
+        </record>
+        <record id="F14.151" model="mental.health.notes">
+            <field name="name">Cocaine abuse with cocaine-induced psychotic disorder with hallucinations</field>
+        </record>
+        <record id="F14.159" model="mental.health.notes">
+            <field name="name">Cocaine abuse with cocaine-induced psychotic disorder, unspecified</field>
+        </record>
+        <record id="F14.180" model="mental.health.notes">
+            <field name="name">Cocaine abuse with cocaine-induced anxiety disorder</field>
+        </record>
+        <record id="F14.181" model="mental.health.notes">
+            <field name="name">Cocaine abuse with cocaine-induced sexual dysfunction</field>
+        </record>
+        <record id="F14.182" model="mental.health.notes">
+            <field name="name">Cocaine abuse with cocaine-induced sleep disorder</field>
+        </record>
+        <record id="F14.188" model="mental.health.notes">
+            <field name="name">Cocaine abuse with other cocaine-induced disorder</field>
+        </record>
+        <record id="F14.19" model="mental.health.notes">
+            <field name="name">Cocaine abuse with unspecified cocaine-induced disorder</field>
+        </record>
+        <record id="F14.20" model="mental.health.notes">
+            <field name="name">Cocaine dependence, uncomplicated</field>
+        </record>
+        <record id="F14.21" model="mental.health.notes">
+            <field name="name">Cocaine dependence, in remission</field>
+        </record>
+        <record id="F14.220" model="mental.health.notes">
+            <field name="name">Cocaine dependence with intoxication, uncomplicated</field>
+        </record>
+        <record id="F14.221" model="mental.health.notes">
+            <field name="name">Cocaine dependence with intoxication delirium</field>
+        </record>
+        <record id="F14.222" model="mental.health.notes">
+            <field name="name">Cocaine dependence with intoxication with perceptual disturbance</field>
+        </record>
+        <record id="F14.229" model="mental.health.notes">
+            <field name="name">Cocaine dependence with intoxication, unspecified</field>
+        </record>
+        <record id="F14.23" model="mental.health.notes">
+            <field name="name">Cocaine dependence with withdrawal</field>
+        </record>
+        <record id="F14.24" model="mental.health.notes">
+            <field name="name">Cocaine dependence with cocaine-induced mood disorder</field>
+        </record>
+        <record id="F14.250" model="mental.health.notes">
+            <field name="name">Cocaine dependence with cocaine-induced psychotic disorder with delusions</field>
+        </record>
+        <record id="F14.251" model="mental.health.notes">
+            <field name="name">Cocaine dependence with cocaine-induced psychotic disorder with hallucinations</field>
+        </record>
+        <record id="F14.259" model="mental.health.notes">
+            <field name="name">Cocaine dependence with cocaine-induced psychotic disorder, unspecified</field>
+        </record>
+        <record id="F14.280" model="mental.health.notes">
+            <field name="name">Cocaine dependence with cocaine-induced anxiety disorder</field>
+        </record>
+        <record id="F14.281" model="mental.health.notes">
+            <field name="name">Cocaine dependence with cocaine-induced sexual dysfunction</field>
+        </record>
+        <record id="F14.282" model="mental.health.notes">
+            <field name="name">Cocaine dependence with cocaine-induced sleep disorder</field>
+        </record>
+        <record id="F14.288" model="mental.health.notes">
+            <field name="name">Cocaine dependence with other cocaine-induced disorder</field>
+        </record>
+        <record id="F14.29" model="mental.health.notes">
+            <field name="name">Cocaine dependence with unspecified cocaine-induced disorder</field>
+        </record>
+        <record id="F14.90" model="mental.health.notes">
+            <field name="name">Cocaine use, unspecified, uncomplicated</field>
+        </record>
+        <record id="F14.920" model="mental.health.notes">
+            <field name="name">Cocaine use, unspecified with intoxication, uncomplicated</field>
+        </record>
+        <record id="F14.921" model="mental.health.notes">
+            <field name="name">Cocaine use, unspecified with intoxication delirium</field>
+        </record>
+        <record id="F14.922" model="mental.health.notes">
+            <field name="name">Cocaine use, unspecified with intoxication with perceptual disturbance</field>
+        </record>
+        <record id="F14.929" model="mental.health.notes">
+            <field name="name">Cocaine use, unspecified with intoxication, unspecified</field>
+        </record>
+        <record id="F14.93" model="mental.health.notes">
+            <field name="name">Cocaine use, unspecified with withdrawal</field>
+        </record>
+        <record id="F14.94" model="mental.health.notes">
+            <field name="name">Cocaine use, unspecified with cocaine-induced mood disorder</field>
+        </record>
+        <record id="F14.950" model="mental.health.notes">
+            <field name="name">Cocaine use, unspecified with cocaine-induced psychotic disorder with delusions</field>
+        </record>
+        <record id="F14.951" model="mental.health.notes">
+            <field name="name">Cocaine use, unspecified with cocaine-induced psychotic disorder with hallucinations</field>
+        </record>
+        <record id="F14.959" model="mental.health.notes">
+            <field name="name">Cocaine use, unspecified with cocaine-induced psychotic disorder, unspecified</field>
+        </record>
+        <record id="F14.980" model="mental.health.notes">
+            <field name="name">Cocaine use, unspecified with cocaine-induced anxiety disorder</field>
+        </record>
+        <record id="F14.981" model="mental.health.notes">
+            <field name="name">Cocaine use, unspecified with cocaine-induced sexual dysfunction</field>
+        </record>
+        <record id="F14.982" model="mental.health.notes">
+            <field name="name">Cocaine use, unspecified with cocaine-induced sleep disorder</field>
+        </record>
+        <record id="F14.988" model="mental.health.notes">
+            <field name="name">Cocaine use, unspecified with other cocaine-induced disorder</field>
+        </record>
+        <record id="F14.99" model="mental.health.notes">
+            <field name="name">Cocaine use, unspecified with unspecified cocaine-induced disorder</field>
+        </record>
+        <record id="F15.10" model="mental.health.notes">
+            <field name="name">Other stimulant abuse, uncomplicated</field>
+        </record>
+        <record id="F15.11" model="mental.health.notes">
+            <field name="name">Other stimulant abuse, in remission</field>
+        </record>
+        <record id="F15.120" model="mental.health.notes">
+            <field name="name">Other stimulant abuse with intoxication, uncomplicated</field>
+        </record>
+        <record id="F15.121" model="mental.health.notes">
+            <field name="name">Other stimulant abuse with intoxication delirium</field>
+        </record>
+        <record id="F15.122" model="mental.health.notes">
+            <field name="name">Other stimulant abuse with intoxication with perceptual disturbance</field>
+        </record>
+        <record id="F15.129" model="mental.health.notes">
+            <field name="name">Other stimulant abuse with intoxication, unspecified</field>
+        </record>
+        <record id="F15.13" model="mental.health.notes">
+            <field name="name">Other stimulant abuse with withdrawal</field>
+        </record>
+        <record id="F15.14" model="mental.health.notes">
+            <field name="name">Other stimulant abuse with stimulant-induced mood disorder</field>
+        </record>
+        <record id="F15.150" model="mental.health.notes">
+            <field name="name">Other stimulant abuse with stimulant-induced psychotic disorder with delusions</field>
+        </record>
+        <record id="F15.151" model="mental.health.notes">
+            <field name="name">Other stimulant abuse with stimulant-induced psychotic disorder with hallucinations</field>
+        </record>
+        <record id="F15.159" model="mental.health.notes">
+            <field name="name">Other stimulant abuse with stimulant-induced psychotic disorder, unspecified</field>
+        </record>
+        <record id="F15.180" model="mental.health.notes">
+            <field name="name">Other stimulant abuse with stimulant-induced anxiety disorder</field>
+        </record>
+        <record id="F15.181" model="mental.health.notes">
+            <field name="name">Other stimulant abuse with stimulant-induced sexual dysfunction</field>
+        </record>
+        <record id="F15.182" model="mental.health.notes">
+            <field name="name">Other stimulant abuse with stimulant-induced sleep disorder</field>
+        </record>
+        <record id="F15.188" model="mental.health.notes">
+            <field name="name">Other stimulant abuse with other stimulant-induced disorder</field>
+        </record>
+        <record id="F15.19" model="mental.health.notes">
+            <field name="name">Other stimulant abuse with unspecified stimulant-induced disorder</field>
+        </record>
+        <record id="F15.20" model="mental.health.notes">
+            <field name="name">Other stimulant dependence, uncomplicated</field>
+        </record>
+        <record id="F15.21" model="mental.health.notes">
+            <field name="name">Other stimulant dependence, in remission</field>
+        </record>
+        <record id="F15.220" model="mental.health.notes">
+            <field name="name">Other stimulant dependence with intoxication, uncomplicated</field>
+        </record>
+        <record id="F15.221" model="mental.health.notes">
+            <field name="name">Other stimulant dependence with intoxication delirium</field>
+        </record>
+        <record id="F15.222" model="mental.health.notes">
+            <field name="name">Other stimulant dependence with intoxication with perceptual disturbance</field>
+        </record>
+        <record id="F15.229" model="mental.health.notes">
+            <field name="name">Other stimulant dependence with intoxication, unspecified</field>
+        </record>
+        <record id="F15.23" model="mental.health.notes">
+            <field name="name">Other stimulant dependence with withdrawal</field>
+        </record>
+        <record id="F15.24" model="mental.health.notes">
+            <field name="name">Other stimulant dependence with stimulant-induced mood disorder</field>
+        </record>
+        <record id="F15.250" model="mental.health.notes">
+            <field name="name">Other stimulant dependence with stimulant-induced psychotic disorder with delusions</field>
+        </record>
+        <record id="F15.251" model="mental.health.notes">
+            <field name="name">Other stimulant dependence with stimulant-induced psychotic disorder with hallucinations</field>
+        </record>
+        <record id="F15.259" model="mental.health.notes">
+            <field name="name">Other stimulant dependence with stimulant-induced psychotic disorder, unspecified</field>
+        </record>
+        <record id="F15.280" model="mental.health.notes">
+            <field name="name">Other stimulant dependence with stimulant-induced anxiety disorder</field>
+        </record>
+        <record id="F15.281" model="mental.health.notes">
+            <field name="name">Other stimulant dependence with stimulant-induced sexual dysfunction</field>
+        </record>
+        <record id="F15.282" model="mental.health.notes">
+            <field name="name">Other stimulant dependence with stimulant-induced sleep disorder</field>
+        </record>
+        <record id="F15.288" model="mental.health.notes">
+            <field name="name">Other stimulant dependence with other stimulant-induced disorder</field>
+        </record>
+        <record id="F15.29" model="mental.health.notes">
+            <field name="name">Other stimulant dependence with unspecified stimulant-induced disorder</field>
+        </record>
+        <record id="F15.90" model="mental.health.notes">
+            <field name="name">Other stimulant use, unspecified, uncomplicated</field>
+        </record>
+        <record id="F15.920" model="mental.health.notes">
+            <field name="name">Other stimulant use, unspecified with intoxication, uncomplicated</field>
+        </record>
+        <record id="F15.921" model="mental.health.notes">
+            <field name="name">Other stimulant use, unspecified with intoxication delirium</field>
+        </record>
+        <record id="F15.922" model="mental.health.notes">
+            <field name="name">Other stimulant use, unspecified with intoxication with perceptual disturbance</field>
+        </record>
+        <record id="F15.929" model="mental.health.notes">
+            <field name="name">Other stimulant use, unspecified with intoxication, unspecified</field>
+        </record>
+        <record id="F15.93" model="mental.health.notes">
+            <field name="name">Other stimulant use, unspecified with withdrawal</field>
+        </record>
+        <record id="F15.94" model="mental.health.notes">
+            <field name="name">Other stimulant use, unspecified with stimulant-induced mood disorder</field>
+        </record>
+        <record id="F15.950" model="mental.health.notes">
+            <field name="name">Other stimulant use, unspecified with stimulant-induced psychotic disorder with delusions</field>
+        </record>
+        <record id="F15.951" model="mental.health.notes">
+            <field name="name">Other stimulant use, unspecified with stimulant-induced psychotic disorder with hallucinations</field>
+        </record>
+        <record id="F15.959" model="mental.health.notes">
+            <field name="name">Other stimulant use, unspecified with stimulant-induced psychotic disorder, unspecified</field>
+        </record>
+        <record id="F15.980" model="mental.health.notes">
+            <field name="name">Other stimulant use, unspecified with stimulant-induced anxiety disorder</field>
+        </record>
+        <record id="F15.981" model="mental.health.notes">
+            <field name="name">Other stimulant use, unspecified with stimulant-induced sexual dysfunction</field>
+        </record>
+        <record id="F15.982" model="mental.health.notes">
+            <field name="name">Other stimulant use, unspecified with stimulant-induced sleep disorder</field>
+        </record>
+        <record id="F15.988" model="mental.health.notes">
+            <field name="name">Other stimulant use, unspecified with other stimulant-induced disorder</field>
+        </record>
+        <record id="F15.99" model="mental.health.notes">
+            <field name="name">Other stimulant use, unspecified with unspecified stimulant-induced disorder</field>
+        </record>
+        <record id="F16.10" model="mental.health.notes">
+            <field name="name">Hallucinogen abuse, uncomplicated</field>
+        </record>
+        <record id="F16.11" model="mental.health.notes">
+            <field name="name">Hallucinogen abuse, in remission</field>
+        </record>
+        <record id="F16.120" model="mental.health.notes">
+            <field name="name">Hallucinogen abuse with intoxication, uncomplicated</field>
+        </record>
+        <record id="F16.121" model="mental.health.notes">
+            <field name="name">Hallucinogen abuse with intoxication with delirium</field>
+        </record>
+        <record id="F16.122" model="mental.health.notes">
+            <field name="name">Hallucinogen abuse with intoxication with perceptual disturbance</field>
+        </record>
+        <record id="F16.129" model="mental.health.notes">
+            <field name="name">Hallucinogen abuse with intoxication, unspecified</field>
+        </record>
+        <record id="F16.14" model="mental.health.notes">
+            <field name="name">Hallucinogen abuse with hallucinogen-induced mood disorder</field>
+        </record>
+        <record id="F16.150" model="mental.health.notes">
+            <field name="name">Hallucinogen abuse with hallucinogen-induced psychotic disorder with delusions</field>
+        </record>
+        <record id="F16.151" model="mental.health.notes">
+            <field name="name">Hallucinogen abuse with hallucinogen-induced psychotic disorder with hallucinations</field>
+        </record>
+        <record id="F16.159" model="mental.health.notes">
+            <field name="name">Hallucinogen abuse with hallucinogen-induced psychotic disorder, unspecified</field>
+        </record>
+        <record id="F16.180" model="mental.health.notes">
+            <field name="name">Hallucinogen abuse with hallucinogen-induced anxiety disorder</field>
+        </record>
+        <record id="F16.183" model="mental.health.notes">
+            <field name="name">Hallucinogen abuse with hallucinogen persisting perception disorder (flashbacks)</field>
+        </record>
+        <record id="F16.188" model="mental.health.notes">
+            <field name="name">Hallucinogen abuse with other hallucinogen-induced disorder</field>
+        </record>
+        <record id="F16.19" model="mental.health.notes">
+            <field name="name">Hallucinogen abuse with unspecified hallucinogen-induced disorder</field>
+        </record>
+        <record id="F16.20" model="mental.health.notes">
+            <field name="name">Hallucinogen dependence, uncomplicated</field>
+        </record>
+        <record id="F16.21" model="mental.health.notes">
+            <field name="name">Hallucinogen dependence, in remission</field>
+        </record>
+        <record id="F16.220" model="mental.health.notes">
+            <field name="name">Hallucinogen dependence with intoxication, uncomplicated</field>
+        </record>
+        <record id="F16.221" model="mental.health.notes">
+            <field name="name">Hallucinogen dependence with intoxication with delirium</field>
+        </record>
+        <record id="F16.229" model="mental.health.notes">
+            <field name="name">Hallucinogen dependence with intoxication, unspecified</field>
+        </record>
+        <record id="F16.24" model="mental.health.notes">
+            <field name="name">Hallucinogen dependence with hallucinogen-induced mood disorder</field>
+        </record>
+        <record id="F16.250" model="mental.health.notes">
+            <field name="name">Hallucinogen dependence with hallucinogen-induced psychotic disorder with delusions</field>
+        </record>
+        <record id="F16.251" model="mental.health.notes">
+            <field name="name">Hallucinogen dependence with hallucinogen-induced psychotic disorder with hallucinations</field>
+        </record>
+        <record id="F16.259" model="mental.health.notes">
+            <field name="name">Hallucinogen dependence with hallucinogen-induced psychotic disorder, unspecified</field>
+        </record>
+        <record id="F16.280" model="mental.health.notes">
+            <field name="name">Hallucinogen dependence with hallucinogen-induced anxiety disorder</field>
+        </record>
+        <record id="F16.283" model="mental.health.notes">
+            <field name="name">Hallucinogen dependence with hallucinogen persisting perception disorder (flashbacks)</field>
+        </record>
+        <record id="F16.288" model="mental.health.notes">
+            <field name="name">Hallucinogen dependence with other hallucinogen-induced disorder</field>
+        </record>
+        <record id="F16.29" model="mental.health.notes">
+            <field name="name">Hallucinogen dependence with unspecified hallucinogen-induced disorder</field>
+        </record>
+        <record id="F16.90" model="mental.health.notes">
+            <field name="name">Hallucinogen use, unspecified, uncomplicated</field>
+        </record>
+        <record id="F16.920" model="mental.health.notes">
+            <field name="name">Hallucinogen use, unspecified with intoxication, uncomplicated</field>
+        </record>
+        <record id="F16.921" model="mental.health.notes">
+            <field name="name">Hallucinogen use, unspecified with intoxication with delirium</field>
+        </record>
+        <record id="F16.929" model="mental.health.notes">
+            <field name="name">Hallucinogen use, unspecified with intoxication, unspecified</field>
+        </record>
+        <record id="F16.94" model="mental.health.notes">
+            <field name="name">Hallucinogen use, unspecified with hallucinogen-induced mood disorder</field>
+        </record>
+        <record id="F16.950" model="mental.health.notes">
+            <field name="name">Hallucinogen use, unspecified with hallucinogen-induced psychotic disorder with delusions</field>
+        </record>
+        <record id="F16.951" model="mental.health.notes">
+            <field name="name">Hallucinogen use, unspecified with hallucinogen-induced psychotic disorder with hallucinations</field>
+        </record>
+        <record id="F16.959" model="mental.health.notes">
+            <field name="name">Hallucinogen use, unspecified with hallucinogen-induced psychotic disorder, unspecified</field>
+        </record>
+        <record id="F16.980" model="mental.health.notes">
+            <field name="name">Hallucinogen use, unspecified with hallucinogen-induced anxiety disorder</field>
+        </record>
+        <record id="F16.983" model="mental.health.notes">
+            <field name="name">Hallucinogen use, unspecified with hallucinogen persisting perception disorder (flashbacks)</field>
+        </record>
+        <record id="F16.988" model="mental.health.notes">
+            <field name="name">Hallucinogen use, unspecified with other hallucinogen-induced disorder</field>
+        </record>
+        <record id="F16.99" model="mental.health.notes">
+            <field name="name">Hallucinogen use, unspecified with unspecified hallucinogen-induced disorder</field>
+        </record>
+        <record id="F17.200" model="mental.health.notes">
+            <field name="name">Nicotine dependence, unspecified, uncomplicated</field>
+        </record>
+        <record id="F17.201" model="mental.health.notes">
+            <field name="name">Nicotine dependence, unspecified, in remission</field>
+        </record>
+        <record id="F17.203" model="mental.health.notes">
+            <field name="name">Nicotine dependence unspecified, with withdrawal</field>
+        </record>
+        <record id="F17.208" model="mental.health.notes">
+            <field name="name">Nicotine dependence, unspecified, with other nicotine-induced disorders</field>
+        </record>
+        <record id="F17.209" model="mental.health.notes">
+            <field name="name">Nicotine dependence, unspecified, with unspecified nicotine-induced disorders</field>
+        </record>
+        <record id="F17.210" model="mental.health.notes">
+            <field name="name">Nicotine dependence, cigarettes, uncomplicated</field>
+        </record>
+        <record id="F17.211" model="mental.health.notes">
+            <field name="name">Nicotine dependence, cigarettes, in remission</field>
+        </record>
+        <record id="F17.213" model="mental.health.notes">
+            <field name="name">Nicotine dependence, cigarettes, with withdrawal</field>
+        </record>
+        <record id="F17.218" model="mental.health.notes">
+            <field name="name">Nicotine dependence, cigarettes, with other nicotine-induced disorders</field>
+        </record>
+        <record id="F17.219" model="mental.health.notes">
+            <field name="name">Nicotine dependence, cigarettes, with unspecified nicotine-induced disorders</field>
+        </record>
+        <record id="F17.220" model="mental.health.notes">
+            <field name="name">Nicotine dependence, chewing tobacco, uncomplicated</field>
+        </record>
+        <record id="F17.221" model="mental.health.notes">
+            <field name="name">Nicotine dependence, chewing tobacco, in remission</field>
+        </record>
+        <record id="F17.223" model="mental.health.notes">
+            <field name="name">Nicotine dependence, chewing tobacco, with withdrawal</field>
+        </record>
+        <record id="F17.228" model="mental.health.notes">
+            <field name="name">Nicotine dependence, chewing tobacco, with other nicotine-induced disorders</field>
+        </record>
+        <record id="F17.229" model="mental.health.notes">
+            <field name="name">Nicotine dependence, chewing tobacco, with unspecified nicotine-induced disorders</field>
+        </record>
+        <record id="F17.290" model="mental.health.notes">
+            <field name="name">Nicotine dependence, other tobacco product, uncomplicated</field>
+        </record>
+        <record id="F17.291" model="mental.health.notes">
+            <field name="name">Nicotine dependence, other tobacco product, in remission</field>
+        </record>
+        <record id="F17.293" model="mental.health.notes">
+            <field name="name">Nicotine dependence, other tobacco product, with withdrawal</field>
+        </record>
+        <record id="F17.298" model="mental.health.notes">
+            <field name="name">Nicotine dependence, other tobacco product, with other nicotine-induced disorders</field>
+        </record>
+        <record id="F17.299" model="mental.health.notes">
+            <field name="name">Nicotine dependence, other tobacco product, with unspecified nicotine-induced disorders</field>
+        </record>
+        <record id="F18.10" model="mental.health.notes">
+            <field name="name">Inhalant abuse, uncomplicated</field>
+        </record>
+        <record id="F18.11" model="mental.health.notes">
+            <field name="name">Inhalant abuse, in remission</field>
+        </record>
+        <record id="F18.120" model="mental.health.notes">
+            <field name="name">Inhalant abuse with intoxication, uncomplicated</field>
+        </record>
+        <record id="F18.121" model="mental.health.notes">
+            <field name="name">Inhalant abuse with intoxication delirium</field>
+        </record>
+        <record id="F18.129" model="mental.health.notes">
+            <field name="name">Inhalant abuse with intoxication, unspecified</field>
+        </record>
+        <record id="F18.14" model="mental.health.notes">
+            <field name="name">Inhalant abuse with inhalant-induced mood disorder</field>
+        </record>
+        <record id="F18.150" model="mental.health.notes">
+            <field name="name">Inhalant abuse with inhalant-induced psychotic disorder with delusions</field>
+        </record>
+        <record id="F18.151" model="mental.health.notes">
+            <field name="name">Inhalant abuse with inhalant-induced psychotic disorder with hallucinations</field>
+        </record>
+        <record id="F18.159" model="mental.health.notes">
+            <field name="name">Inhalant abuse with inhalant-induced psychotic disorder, unspecified</field>
+        </record>
+        <record id="F18.17" model="mental.health.notes">
+            <field name="name">Inhalant abuse with inhalant-induced dementia</field>
+        </record>
+        <record id="F18.180" model="mental.health.notes">
+            <field name="name">Inhalant abuse with inhalant-induced anxiety disorder</field>
+        </record>
+        <record id="F18.188" model="mental.health.notes">
+            <field name="name">Inhalant abuse with other inhalant-induced disorder</field>
+        </record>
+        <record id="F18.19" model="mental.health.notes">
+            <field name="name">Inhalant abuse with unspecified inhalant-induced disorder</field>
+        </record>
+        <record id="F18.20" model="mental.health.notes">
+            <field name="name">Inhalant dependence, uncomplicated</field>
+        </record>
+        <record id="F18.21" model="mental.health.notes">
+            <field name="name">Inhalant dependence, in remission</field>
+        </record>
+        <record id="F18.220" model="mental.health.notes">
+            <field name="name">Inhalant dependence with intoxication, uncomplicated</field>
+        </record>
+        <record id="F18.221" model="mental.health.notes">
+            <field name="name">Inhalant dependence with intoxication delirium</field>
+        </record>
+        <record id="F18.229" model="mental.health.notes">
+            <field name="name">Inhalant dependence with intoxication, unspecified</field>
+        </record>
+        <record id="F18.24" model="mental.health.notes">
+            <field name="name">Inhalant dependence with inhalant-induced mood disorder</field>
+        </record>
+        <record id="F18.250" model="mental.health.notes">
+            <field name="name">Inhalant dependence with inhalant-induced psychotic disorder with delusions</field>
+        </record>
+        <record id="F18.251" model="mental.health.notes">
+            <field name="name">Inhalant dependence with inhalant-induced psychotic disorder with hallucinations</field>
+        </record>
+        <record id="F18.259" model="mental.health.notes">
+            <field name="name">Inhalant dependence with inhalant-induced psychotic disorder, unspecified</field>
+        </record>
+        <record id="F18.27" model="mental.health.notes">
+            <field name="name">Inhalant dependence with inhalant-induced dementia</field>
+        </record>
+        <record id="F18.280" model="mental.health.notes">
+            <field name="name">Inhalant dependence with inhalant-induced anxiety disorder</field>
+        </record>
+        <record id="F18.288" model="mental.health.notes">
+            <field name="name">Inhalant dependence with other inhalant-induced disorder</field>
+        </record>
+        <record id="F18.29" model="mental.health.notes">
+            <field name="name">Inhalant dependence with unspecified inhalant-induced disorder</field>
+        </record>
+        <record id="F18.90" model="mental.health.notes">
+            <field name="name">Inhalant use, unspecified, uncomplicated</field>
+        </record>
+        <record id="F18.920" model="mental.health.notes">
+            <field name="name">Inhalant use, unspecified with intoxication, uncomplicated</field>
+        </record>
+        <record id="F18.921" model="mental.health.notes">
+            <field name="name">Inhalant use, unspecified with intoxication with delirium</field>
+        </record>
+        <record id="F18.929" model="mental.health.notes">
+            <field name="name">Inhalant use, unspecified with intoxication, unspecified</field>
+        </record>
+        <record id="F18.94" model="mental.health.notes">
+            <field name="name">Inhalant use, unspecified with inhalant-induced mood disorder</field>
+        </record>
+        <record id="F18.950" model="mental.health.notes">
+            <field name="name">Inhalant use, unspecified with inhalant-induced psychotic disorder with delusions</field>
+        </record>
+        <record id="F18.951" model="mental.health.notes">
+            <field name="name">Inhalant use, unspecified with inhalant-induced psychotic disorder with hallucinations</field>
+        </record>
+        <record id="F18.959" model="mental.health.notes">
+            <field name="name">Inhalant use, unspecified with inhalant-induced psychotic disorder, unspecified</field>
+        </record>
+        <record id="F18.97" model="mental.health.notes">
+            <field name="name">Inhalant use, unspecified with inhalant-induced persisting dementia</field>
+        </record>
+        <record id="F18.980" model="mental.health.notes">
+            <field name="name">Inhalant use, unspecified with inhalant-induced anxiety disorder</field>
+        </record>
+        <record id="F18.988" model="mental.health.notes">
+            <field name="name">Inhalant use, unspecified with other inhalant-induced disorder</field>
+        </record>
+        <record id="F18.99" model="mental.health.notes">
+            <field name="name">Inhalant use, unspecified with unspecified inhalant-induced disorder</field>
+        </record>
+        <record id="F19.10" model="mental.health.notes">
+            <field name="name">Other psychoactive substance abuse, uncomplicated</field>
+        </record>
+        <record id="F19.11" model="mental.health.notes">
+            <field name="name">Other psychoactive substance abuse, in remission</field>
+        </record>
+        <record id="F19.120" model="mental.health.notes">
+            <field name="name">Other psychoactive substance abuse with intoxication, uncomplicated</field>
+        </record>
+        <record id="F19.121" model="mental.health.notes">
+            <field name="name">Other psychoactive substance abuse with intoxication delirium</field>
+        </record>
+        <record id="F19.122" model="mental.health.notes">
+            <field name="name">Other psychoactive substance abuse with intoxication with perceptual disturbances</field>
+        </record>
+        <record id="F19.129" model="mental.health.notes">
+            <field name="name">Other psychoactive substance abuse with intoxication, unspecified</field>
+        </record>
+        <record id="F19.130" model="mental.health.notes">
+            <field name="name">Other psychoactive substance abuse with withdrawal, uncomplicated</field>
+        </record>
+        <record id="F19.131" model="mental.health.notes">
+            <field name="name">Other psychoactive substance abuse with withdrawal delirium</field>
+        </record>
+        <record id="F19.132" model="mental.health.notes">
+            <field name="name">Other psychoactive substance abuse with withdrawal with perceptual disturbance</field>
+        </record>
+        <record id="F19.139" model="mental.health.notes">
+            <field name="name">Other psychoactive substance abuse with withdrawal, unspecified</field>
+        </record>
+        <record id="F19.14" model="mental.health.notes">
+            <field name="name">Other psychoactive substance abuse with psychoactive substance-induced mood disorder</field>
+        </record>
+        <record id="F19.150" model="mental.health.notes">
+            <field name="name">Other psychoactive substance abuse with psychoactive substance-induced psychotic disorder with delusions</field>
+        </record>
+        <record id="F19.151" model="mental.health.notes">
+            <field name="name">Other psychoactive substance abuse with psychoactive substance-induced psychotic disorder with hallucinations</field>
+        </record>
+        <record id="F19.159" model="mental.health.notes">
+            <field name="name">Other psychoactive substance abuse with psychoactive substance-induced psychotic disorder, unspecified</field>
+        </record>
+        <record id="F19.16" model="mental.health.notes">
+            <field name="name">Other psychoactive substance abuse with psychoactive substance-induced persisting amnestic disorder</field>
+        </record>
+        <record id="F19.17" model="mental.health.notes">
+            <field name="name">Other psychoactive substance abuse with psychoactive substance-induced persisting dementia</field>
+        </record>
+        <record id="F19.180" model="mental.health.notes">
+            <field name="name">Other psychoactive substance abuse with psychoactive substance-induced anxiety disorder</field>
+        </record>
+        <record id="F19.181" model="mental.health.notes">
+            <field name="name">Other psychoactive substance abuse with psychoactive substance-induced sexual dysfunction</field>
+        </record>
+        <record id="F19.182" model="mental.health.notes">
+            <field name="name">Other psychoactive substance abuse with psychoactive substance-induced sleep disorder</field>
+        </record>
+        <record id="F19.188" model="mental.health.notes">
+            <field name="name">Other psychoactive substance abuse with other psychoactive substance-induced disorder</field>
+        </record>
+        <record id="F19.19" model="mental.health.notes">
+            <field name="name">Other psychoactive substance abuse with unspecified psychoactive substance-induced disorder</field>
+        </record>
+        <record id="F19.20" model="mental.health.notes">
+            <field name="name">Other psychoactive substance dependence, uncomplicated</field>
+        </record>
+        <record id="F19.21" model="mental.health.notes">
+            <field name="name">Other psychoactive substance dependence, in remission</field>
+        </record>
+        <record id="F19.220" model="mental.health.notes">
+            <field name="name">Other psychoactive substance dependence with intoxication, uncomplicated</field>
+        </record>
+        <record id="F19.221" model="mental.health.notes">
+            <field name="name">Other psychoactive substance dependence with intoxication delirium</field>
+        </record>
+        <record id="F19.222" model="mental.health.notes">
+            <field name="name">Other psychoactive substance dependence with intoxication with perceptual disturbance</field>
+        </record>
+        <record id="F19.229" model="mental.health.notes">
+            <field name="name">Other psychoactive substance dependence with intoxication, unspecified</field>
+        </record>
+        <record id="F19.230" model="mental.health.notes">
+            <field name="name">Other psychoactive substance dependence with withdrawal, uncomplicated</field>
+        </record>
+        <record id="F19.231" model="mental.health.notes">
+            <field name="name">Other psychoactive substance dependence with withdrawal delirium</field>
+        </record>
+        <record id="F19.232" model="mental.health.notes">
+            <field name="name">Other psychoactive substance dependence with withdrawal with perceptual disturbance</field>
+        </record>
+        <record id="F19.239" model="mental.health.notes">
+            <field name="name">Other psychoactive substance dependence with withdrawal, unspecified</field>
+        </record>
+        <record id="F19.24" model="mental.health.notes">
+            <field name="name">Other psychoactive substance dependence with psychoactive substance-induced mood disorder</field>
+        </record>
+        <record id="F19.250" model="mental.health.notes">
+            <field name="name">Other psychoactive substance dependence with psychoactive substance-induced psychotic disorder with delusions</field>
+        </record>
+        <record id="F19.251" model="mental.health.notes">
+            <field name="name">Other psychoactive substance dependence with psychoactive substance-induced psychotic disorder with hallucinations</field>
+        </record>
+        <record id="F19.259" model="mental.health.notes">
+            <field name="name">Other psychoactive substance dependence with psychoactive substance-induced psychotic disorder, unspecified</field>
+        </record>
+        <record id="F19.26" model="mental.health.notes">
+            <field name="name">Other psychoactive substance dependence with psychoactive substance-induced persisting amnestic disorder</field>
+        </record>
+        <record id="F19.27" model="mental.health.notes">
+            <field name="name">Other psychoactive substance dependence with psychoactive substance-induced persisting dementia</field>
+        </record>
+        <record id="F19.280" model="mental.health.notes">
+            <field name="name">Other psychoactive substance dependence with psychoactive substance-induced anxiety disorder</field>
+        </record>
+        <record id="F19.281" model="mental.health.notes">
+            <field name="name">Other psychoactive substance dependence with psychoactive substance-induced sexual dysfunction</field>
+        </record>
+        <record id="F19.282" model="mental.health.notes">
+            <field name="name">Other psychoactive substance dependence with psychoactive substance-induced sleep disorder</field>
+        </record>
+        <record id="F19.288" model="mental.health.notes">
+            <field name="name">Other psychoactive substance dependence with other psychoactive substance-induced disorder</field>
+        </record>
+        <record id="F19.29" model="mental.health.notes">
+            <field name="name">Other psychoactive substance dependence with unspecified psychoactive substance-induced disorder</field>
+        </record>
+        <record id="F19.90" model="mental.health.notes">
+            <field name="name">Other psychoactive substance use, unspecified, uncomplicated</field>
+        </record>
+        <record id="F19.920" model="mental.health.notes">
+            <field name="name">Other psychoactive substance use, unspecified with intoxication, uncomplicated</field>
+        </record>
+        <record id="F19.921" model="mental.health.notes">
+            <field name="name">Other psychoactive substance use, unspecified with intoxication with delirium</field>
+        </record>
+        <record id="F19.922" model="mental.health.notes">
+            <field name="name">Other psychoactive substance use, unspecified with intoxication with perceptual disturbance</field>
+        </record>
+        <record id="F19.929" model="mental.health.notes">
+            <field name="name">Other psychoactive substance use, unspecified with intoxication, unspecified</field>
+        </record>
+        <record id="F19.930" model="mental.health.notes">
+            <field name="name">Other psychoactive substance use, unspecified with withdrawal, uncomplicated</field>
+        </record>
+        <record id="F19.931" model="mental.health.notes">
+            <field name="name">Other psychoactive substance use, unspecified with withdrawal delirium</field>
+        </record>
+        <record id="F19.932" model="mental.health.notes">
+            <field name="name">Other psychoactive substance use, unspecified with withdrawal with perceptual disturbance</field>
+        </record>
+        <record id="F19.939" model="mental.health.notes">
+            <field name="name">Other psychoactive substance use, unspecified with withdrawal, unspecified</field>
+        </record>
+        <record id="F19.94" model="mental.health.notes">
+            <field name="name">Other psychoactive substance use, unspecified with psychoactive substance-induced mood disorder</field>
+        </record>
+        <record id="F19.950" model="mental.health.notes">
+            <field name="name">Other psychoactive substance use, unspecified with psychoactive substance-induced psychotic disorder with delusions</field>
+        </record>
+        <record id="F19.951" model="mental.health.notes">
+            <field name="name">Other psychoactive substance use, unspecified with psychoactive substance-induced psychotic disorder with hallucinations</field>
+        </record>
+        <record id="F19.959" model="mental.health.notes">
+            <field name="name">Other psychoactive substance use, unspecified with psychoactive substance-induced psychotic disorder, unspecified</field>
+        </record>
+        <record id="F19.96" model="mental.health.notes">
+            <field name="name">Other psychoactive substance use, unspecified with psychoactive substance-induced persisting amnestic disorder</field>
+        </record>
+        <record id="F19.97" model="mental.health.notes">
+            <field name="name">Other psychoactive substance use, unspecified with psychoactive substance-induced persisting dementia</field>
+        </record>
+        <record id="F19.980" model="mental.health.notes">
+            <field name="name">Other psychoactive substance use, unspecified with psychoactive substance-induced anxiety disorder</field>
+        </record>
+        <record id="F19.981" model="mental.health.notes">
+            <field name="name">Other psychoactive substance use, unspecified with psychoactive substance-induced sexual dysfunction</field>
+        </record>
+        <record id="F19.982" model="mental.health.notes">
+            <field name="name">Other psychoactive substance use, unspecified with psychoactive substance-induced sleep disorder</field>
+        </record>
+        <record id="F19.988" model="mental.health.notes">
+            <field name="name">Other psychoactive substance use, unspecified with other psychoactive substance-induced disorder</field>
+        </record>
+        <record id="F19.99" model="mental.health.notes">
+            <field name="name">Other psychoactive substance use, unspecified with unspecified psychoactive substance-induced disorder</field>
+        </record>
+        <record id="F20.0" model="mental.health.notes">
+            <field name="name">Paranoid schizophrenia</field>
+        </record>
+        <record id="F20.1" model="mental.health.notes">
+            <field name="name">Disorganized schizophrenia</field>
+        </record>
+        <record id="F20.2" model="mental.health.notes">
+            <field name="name">Catatonic schizophrenia</field>
+        </record>
+        <record id="F20.3" model="mental.health.notes">
+            <field name="name">Undifferentiated schizophrenia</field>
+        </record>
+        <record id="F20.5" model="mental.health.notes">
+            <field name="name">Residual schizophrenia</field>
+        </record>
+        <record id="F20.81" model="mental.health.notes">
+            <field name="name">Schizophreniform disorder</field>
+        </record>
+        <record id="F20.89" model="mental.health.notes">
+            <field name="name">Other schizophrenia</field>
+        </record>
+        <record id="F20.9" model="mental.health.notes">
+            <field name="name">Schizophrenia, unspecified</field>
+        </record>
+        <record id="F21" model="mental.health.notes">
+            <field name="name">Schizotypal disorder</field>
+        </record>
+        <record id="F22" model="mental.health.notes">
+            <field name="name">Delusional disorders</field>
+        </record>
+        <record id="F23" model="mental.health.notes">
+            <field name="name">Brief psychotic disorder</field>
+        </record>
+        <record id="F24" model="mental.health.notes">
+            <field name="name">Shared psychotic disorder</field>
+        </record>
+        <record id="F25.0" model="mental.health.notes">
+            <field name="name">Schizoaffective disorder, bipolar type</field>
+        </record>
+        <record id="F25.1" model="mental.health.notes">
+            <field name="name">Schizoaffective disorder, depressive type</field>
+        </record>
+        <record id="F25.8" model="mental.health.notes">
+            <field name="name">Other schizoaffective disorders</field>
+        </record>
+        <record id="F25.9" model="mental.health.notes">
+            <field name="name">Schizoaffective disorder, unspecified</field>
+        </record>
+        <record id="F28" model="mental.health.notes">
+            <field name="name">Other psychotic disorder not due to a substance or known physiological condition</field>
+        </record>
+        <record id="F29" model="mental.health.notes">
+            <field name="name">Unspecified psychosis not due to a substance or known physiological condition</field>
+        </record>
+        <record id="F30.10" model="mental.health.notes">
+            <field name="name">Manic episode without psychotic symptoms, unspecified</field>
+        </record>
+        <record id="F30.11" model="mental.health.notes">
+            <field name="name">Manic episode without psychotic symptoms, mild</field>
+        </record>
+        <record id="F30.12" model="mental.health.notes">
+            <field name="name">Manic episode without psychotic symptoms, moderate</field>
+        </record>
+        <record id="F30.13" model="mental.health.notes">
+            <field name="name">Manic episode, severe, without psychotic symptoms</field>
+        </record>
+        <record id="F30.2" model="mental.health.notes">
+            <field name="name">Manic episode, severe with psychotic symptoms</field>
+        </record>
+        <record id="F30.3" model="mental.health.notes">
+            <field name="name">Manic episode in partial remission</field>
+        </record>
+        <record id="F30.4" model="mental.health.notes">
+            <field name="name">Manic episode in full remission</field>
+        </record>
+        <record id="F30.8" model="mental.health.notes">
+            <field name="name">Other manic episodes</field>
+        </record>
+        <record id="F30.9" model="mental.health.notes">
+            <field name="name">Manic episode, unspecified</field>
+        </record>
+        <record id="F31.0" model="mental.health.notes">
+            <field name="name">Bipolar disorder, current episode hypomanic</field>
+        </record>
+        <record id="F31.10" model="mental.health.notes">
+            <field name="name">Bipolar disorder, current episode manic without psychotic features, unspecified</field>
+        </record>
+        <record id="F31.11" model="mental.health.notes">
+            <field name="name">Bipolar disorder, current episode manic without psychotic features, mild</field>
+        </record>
+        <record id="F31.12" model="mental.health.notes">
+            <field name="name">Bipolar disorder, current episode manic without psychotic features, moderate</field>
+        </record>
+        <record id="F31.13" model="mental.health.notes">
+            <field name="name">Bipolar disorder, current episode manic without psychotic features, severe</field>
+        </record>
+        <record id="F31.2" model="mental.health.notes">
+            <field name="name">Bipolar disorder, current episode manic severe with psychotic features</field>
+        </record>
+        <record id="F31.30" model="mental.health.notes">
+            <field name="name">Bipolar disorder, current episode depressed, mild or moderate severity, unspecified</field>
+        </record>
+        <record id="F31.31" model="mental.health.notes">
+            <field name="name">Bipolar disorder, current episode depressed, mild</field>
+        </record>
+        <record id="F31.32" model="mental.health.notes">
+            <field name="name">Bipolar disorder, current episode depressed, moderate</field>
+        </record>
+        <record id="F31.4" model="mental.health.notes">
+            <field name="name">Bipolar disorder, current episode depressed, severe, without psychotic features</field>
+        </record>
+        <record id="F31.5" model="mental.health.notes">
+            <field name="name">Bipolar disorder, current episode depressed, severe, with psychotic features</field>
+        </record>
+        <record id="F31.60" model="mental.health.notes">
+            <field name="name">Bipolar disorder, current episode mixed, unspecified</field>
+        </record>
+        <record id="F31.61" model="mental.health.notes">
+            <field name="name">Bipolar disorder, current episode mixed, mild</field>
+        </record>
+        <record id="F31.62" model="mental.health.notes">
+            <field name="name">Bipolar disorder, current episode mixed, moderate</field>
+        </record>
+        <record id="F31.63" model="mental.health.notes">
+            <field name="name">Bipolar disorder, current episode mixed, severe, without psychotic features</field>
+        </record>
+        <record id="F31.64" model="mental.health.notes">
+            <field name="name">Bipolar disorder, current episode mixed, severe, with psychotic features</field>
+        </record>
+        <record id="F31.70" model="mental.health.notes">
+            <field name="name">Bipolar disorder, currently in remission, most recent episode unspecified</field>
+        </record>
+        <record id="F31.71" model="mental.health.notes">
+            <field name="name">Bipolar disorder, in partial remission, most recent episode hypomanic</field>
+        </record>
+        <record id="F31.72" model="mental.health.notes">
+            <field name="name">Bipolar disorder, in full remission, most recent episode hypomanic</field>
+        </record>
+        <record id="F31.73" model="mental.health.notes">
+            <field name="name">Bipolar disorder, in partial remission, most recent episode manic</field>
+        </record>
+        <record id="F31.74" model="mental.health.notes">
+            <field name="name">Bipolar disorder, in full remission, most recent episode manic</field>
+        </record>
+        <record id="F31.75" model="mental.health.notes">
+            <field name="name">Bipolar disorder, in partial remission, most recent episode depressed</field>
+        </record>
+        <record id="F31.76" model="mental.health.notes">
+            <field name="name">Bipolar disorder, in full remission, most recent episode depressed</field>
+        </record>
+        <record id="F31.77" model="mental.health.notes">
+            <field name="name">Bipolar disorder, in partial remission, most recent episode mixed</field>
+        </record>
+        <record id="F31.78" model="mental.health.notes">
+            <field name="name">Bipolar disorder, in full remission, most recent episode mixed</field>
+        </record>
+        <record id="F31.81" model="mental.health.notes">
+            <field name="name">Bipolar II disorder</field>
+        </record>
+        <record id="F31.89" model="mental.health.notes">
+            <field name="name">Other bipolar disorder</field>
+        </record>
+        <record id="F31.9" model="mental.health.notes">
+            <field name="name">Bipolar disorder, unspecified</field>
+        </record>
+        <record id="F32.0" model="mental.health.notes">
+            <field name="name">Major depressive disorder, single episode, mild</field>
+        </record>
+        <record id="F32.1" model="mental.health.notes">
+            <field name="name">Major depressive disorder, single episode, moderate</field>
+        </record>
+        <record id="F32.2" model="mental.health.notes">
+            <field name="name">Major depressive disorder, single episode, severe without psychotic features</field>
+        </record>
+        <record id="F32.3" model="mental.health.notes">
+            <field name="name">Major depressive disorder, single episode, severe with psychotic features</field>
+        </record>
+        <record id="F32.4" model="mental.health.notes">
+            <field name="name">Major depressive disorder, single episode, in partial remission</field>
+        </record>
+        <record id="F32.5" model="mental.health.notes">
+            <field name="name">Major depressive disorder, single episode, in full remission</field>
+        </record>
+        <record id="F32.81" model="mental.health.notes">
+            <field name="name">Premenstrual dysphoric disorder</field>
+        </record>
+        <record id="F32.89" model="mental.health.notes">
+            <field name="name">Other specified depressive episodes</field>
+        </record>
+        <record id="F32.9" model="mental.health.notes">
+            <field name="name">Major depressive disorder, single episode, unspecified</field>
+        </record>
+        <record id="F32.A" model="mental.health.notes">
+            <field name="name">Depression, unspecified</field>
+        </record>
+        <record id="F33.0" model="mental.health.notes">
+            <field name="name">Major depressive disorder, recurrent, mild</field>
+        </record>
+        <record id="F33.1" model="mental.health.notes">
+            <field name="name">Major depressive disorder, recurrent, moderate</field>
+        </record>
+        <record id="F33.2" model="mental.health.notes">
+            <field name="name">Major depressive disorder, recurrent severe without psychotic features</field>
+        </record>
+        <record id="F33.3" model="mental.health.notes">
+            <field name="name">Major depressive disorder, recurrent, severe with psychotic symptoms</field>
+        </record>
+        <record id="F33.40" model="mental.health.notes">
+            <field name="name">Major depressive disorder, recurrent, in remission, unspecified</field>
+        </record>
+        <record id="F33.41" model="mental.health.notes">
+            <field name="name">Major depressive disorder, recurrent, in partial remission</field>
+        </record>
+        <record id="F33.42" model="mental.health.notes">
+            <field name="name">Major depressive disorder, recurrent, in full remission</field>
+        </record>
+        <record id="F33.8" model="mental.health.notes">
+            <field name="name">Other recurrent depressive disorders</field>
+        </record>
+        <record id="F33.9" model="mental.health.notes">
+            <field name="name">Major depressive disorder, recurrent, unspecified</field>
+        </record>
+        <record id="F34.0" model="mental.health.notes">
+            <field name="name">Cyclothymic disorder</field>
+        </record>
+        <record id="F34.1" model="mental.health.notes">
+            <field name="name">Dysthymic disorder</field>
+        </record>
+        <record id="F34.81" model="mental.health.notes">
+            <field name="name">Disruptive mood dysregulation disorder</field>
+        </record>
+        <record id="F34.89" model="mental.health.notes">
+            <field name="name">Other specified persistent mood disorders</field>
+        </record>
+        <record id="F34.9" model="mental.health.notes">
+            <field name="name">Persistent mood [affective] disorder, unspecified</field>
+        </record>
+        <record id="F39" model="mental.health.notes">
+            <field name="name">Unspecified mood [affective] disorder</field>
+        </record>
+        <record id="F40.00" model="mental.health.notes">
+            <field name="name">Agoraphobia, unspecified</field>
+        </record>
+        <record id="F40.01" model="mental.health.notes">
+            <field name="name">Agoraphobia with panic disorder</field>
+        </record>
+        <record id="F40.02" model="mental.health.notes">
+            <field name="name">Agoraphobia without panic disorder</field>
+        </record>
+        <record id="F40.10" model="mental.health.notes">
+            <field name="name">Social phobia, unspecified</field>
+        </record>
+        <record id="F40.11" model="mental.health.notes">
+            <field name="name">Social phobia, generalized</field>
+        </record>
+        <record id="F40.210" model="mental.health.notes">
+            <field name="name">Arachnophobia</field>
+        </record>
+        <record id="F40.218" model="mental.health.notes">
+            <field name="name">Other animal type phobia</field>
+        </record>
+        <record id="F40.220" model="mental.health.notes">
+            <field name="name">Fear of thunderstorms</field>
+        </record>
+        <record id="F40.228" model="mental.health.notes">
+            <field name="name">Other natural environment type phobia</field>
+        </record>
+        <record id="F40.230" model="mental.health.notes">
+            <field name="name">Fear of blood</field>
+        </record>
+        <record id="F40.231" model="mental.health.notes">
+            <field name="name">Fear of injections and transfusions</field>
+        </record>
+        <record id="F40.232" model="mental.health.notes">
+            <field name="name">Fear of other medical care</field>
+        </record>
+        <record id="F40.233" model="mental.health.notes">
+            <field name="name">Fear of injury</field>
+        </record>
+        <record id="F40.240" model="mental.health.notes">
+            <field name="name">Claustrophobia</field>
+        </record>
+        <record id="F40.241" model="mental.health.notes">
+            <field name="name">Acrophobia</field>
+        </record>
+        <record id="F40.242" model="mental.health.notes">
+            <field name="name">Fear of bridges</field>
+        </record>
+        <record id="F40.243" model="mental.health.notes">
+            <field name="name">Fear of flying</field>
+        </record>
+        <record id="F40.248" model="mental.health.notes">
+            <field name="name">Other situational type phobia</field>
+        </record>
+        <record id="F40.290" model="mental.health.notes">
+            <field name="name">Androphobia</field>
+        </record>
+        <record id="F40.291" model="mental.health.notes">
+            <field name="name">Gynephobia</field>
+        </record>
+        <record id="F40.298" model="mental.health.notes">
+            <field name="name">Other specified phobia</field>
+        </record>
+        <record id="F40.8" model="mental.health.notes">
+            <field name="name">Other phobic anxiety disorders</field>
+        </record>
+        <record id="F40.9" model="mental.health.notes">
+            <field name="name">Phobic anxiety disorder, unspecified</field>
+        </record>
+        <record id="F41.0" model="mental.health.notes">
+            <field name="name">Panic disorder [episodic paroxysmal anxiety]</field>
+        </record>
+        <record id="F41.1" model="mental.health.notes">
+            <field name="name">Generalized anxiety disorder</field>
+        </record>
+        <record id="F41.3" model="mental.health.notes">
+            <field name="name">Other mixed anxiety disorders</field>
+        </record>
+        <record id="F41.8" model="mental.health.notes">
+            <field name="name">Other specified anxiety disorders</field>
+        </record>
+        <record id="F41.9" model="mental.health.notes">
+            <field name="name">Anxiety disorder, unspecified</field>
+        </record>
+        <record id="F42.2" model="mental.health.notes">
+            <field name="name">Mixed obsessional thoughts and acts</field>
+        </record>
+        <record id="F42.3" model="mental.health.notes">
+            <field name="name">Hoarding disorder</field>
+        </record>
+        <record id="F42.4" model="mental.health.notes">
+            <field name="name">Excoriation (skin-picking) disorder</field>
+        </record>
+        <record id="F42.8" model="mental.health.notes">
+            <field name="name">Other obsessive-compulsive disorder</field>
+        </record>
+        <record id="F42.9" model="mental.health.notes">
+            <field name="name">Obsessive-compulsive disorder, unspecified</field>
+        </record>
+        <record id="F43.0" model="mental.health.notes">
+            <field name="name">Acute stress reaction</field>
+        </record>
+        <record id="F43.10" model="mental.health.notes">
+            <field name="name">Post-traumatic stress disorder, unspecified</field>
+        </record>
+        <record id="F43.11" model="mental.health.notes">
+            <field name="name">Post-traumatic stress disorder, acute</field>
+        </record>
+        <record id="F43.12" model="mental.health.notes">
+            <field name="name">Post-traumatic stress disorder, chronic</field>
+        </record>
+        <record id="F43.20" model="mental.health.notes">
+            <field name="name">Adjustment disorder, unspecified</field>
+        </record>
+        <record id="F43.21" model="mental.health.notes">
+            <field name="name">Adjustment disorder with depressed mood</field>
+        </record>
+        <record id="F43.22" model="mental.health.notes">
+            <field name="name">Adjustment disorder with anxiety</field>
+        </record>
+        <record id="F43.23" model="mental.health.notes">
+            <field name="name">Adjustment disorder with mixed anxiety and depressed mood</field>
+        </record>
+        <record id="F43.24" model="mental.health.notes">
+            <field name="name">Adjustment disorder with disturbance of conduct</field>
+        </record>
+        <record id="F43.25" model="mental.health.notes">
+            <field name="name">Adjustment disorder with mixed disturbance of emotions and conduct</field>
+        </record>
+        <record id="F43.29" model="mental.health.notes">
+            <field name="name">Adjustment disorder with other symptoms</field>
+        </record>
+        <record id="F43.8" model="mental.health.notes">
+            <field name="name">Other reactions to severe stress</field>
+        </record>
+        <record id="F43.9" model="mental.health.notes">
+            <field name="name">Reaction to severe stress, unspecified</field>
+        </record>
+        <record id="F44.0" model="mental.health.notes">
+            <field name="name">Dissociative amnesia</field>
+        </record>
+        <record id="F44.1" model="mental.health.notes">
+            <field name="name">Dissociative fugue</field>
+        </record>
+        <record id="F44.2" model="mental.health.notes">
+            <field name="name">Dissociative stupor</field>
+        </record>
+        <record id="F44.4" model="mental.health.notes">
+            <field name="name">Conversion disorder with motor symptom or deficit</field>
+        </record>
+        <record id="F44.5" model="mental.health.notes">
+            <field name="name">Conversion disorder with seizures or convulsions</field>
+        </record>
+        <record id="F44.6" model="mental.health.notes">
+            <field name="name">Conversion disorder with sensory symptom or deficit</field>
+        </record>
+        <record id="F44.7" model="mental.health.notes">
+            <field name="name">Conversion disorder with mixed symptom presentation</field>
+        </record>
+        <record id="F44.81" model="mental.health.notes">
+            <field name="name">Dissociative identity disorder</field>
+        </record>
+        <record id="F44.89" model="mental.health.notes">
+            <field name="name">Other dissociative and conversion disorders</field>
+        </record>
+        <record id="F44.9" model="mental.health.notes">
+            <field name="name">Dissociative and conversion disorder, unspecified</field>
+        </record>
+        <record id="F45.0" model="mental.health.notes">
+            <field name="name">Somatization disorder</field>
+        </record>
+        <record id="F45.1" model="mental.health.notes">
+            <field name="name">Undifferentiated somatoform disorder</field>
+        </record>
+        <record id="F45.20" model="mental.health.notes">
+            <field name="name">Hypochondriacal disorder, unspecified</field>
+        </record>
+        <record id="F45.21" model="mental.health.notes">
+            <field name="name">Hypochondriasis</field>
+        </record>
+        <record id="F45.22" model="mental.health.notes">
+            <field name="name">Body dysmorphic disorder</field>
+        </record>
+        <record id="F45.29" model="mental.health.notes">
+            <field name="name">Other hypochondriacal disorders</field>
+        </record>
+        <record id="F45.41" model="mental.health.notes">
+            <field name="name">Pain disorder exclusively related to psychological factors</field>
+        </record>
+        <record id="F45.42" model="mental.health.notes">
+            <field name="name">Pain disorder with related psychological factors</field>
+        </record>
+        <record id="F45.8" model="mental.health.notes">
+            <field name="name">Other somatoform disorders</field>
+        </record>
+        <record id="F45.9" model="mental.health.notes">
+            <field name="name">Somatoform disorder, unspecified</field>
+        </record>
+        <record id="F48.1" model="mental.health.notes">
+            <field name="name">Depersonalization-derealization syndrome</field>
+        </record>
+        <record id="F48.2" model="mental.health.notes">
+            <field name="name">Pseudobulbar affect</field>
+        </record>
+        <record id="F48.8" model="mental.health.notes">
+            <field name="name">Other specified nonpsychotic mental disorders</field>
+        </record>
+        <record id="F48.9" model="mental.health.notes">
+            <field name="name">Nonpsychotic mental disorder, unspecified</field>
+        </record>
+        <record id="F50.00" model="mental.health.notes">
+            <field name="name">Anorexia nervosa, unspecified</field>
+        </record>
+        <record id="F50.01" model="mental.health.notes">
+            <field name="name">Anorexia nervosa, restricting type</field>
+        </record>
+        <record id="F50.02" model="mental.health.notes">
+            <field name="name">Anorexia nervosa, binge eating/purging type</field>
+        </record>
+        <record id="F50.2" model="mental.health.notes">
+            <field name="name">Bulimia nervosa</field>
+        </record>
+        <record id="F50.81" model="mental.health.notes">
+            <field name="name">Binge eating disorder</field>
+        </record>
+        <record id="F50.82" model="mental.health.notes">
+            <field name="name">Avoidant/restrictive food intake disorder</field>
+        </record>
+        <record id="F50.89" model="mental.health.notes">
+            <field name="name">Other specified eating disorder</field>
+        </record>
+        <record id="F50.9" model="mental.health.notes">
+            <field name="name">Eating disorder, unspecified</field>
+        </record>
+        <record id="F51.01" model="mental.health.notes">
+            <field name="name">Primary insomnia</field>
+        </record>
+        <record id="F51.02" model="mental.health.notes">
+            <field name="name">Adjustment insomnia</field>
+        </record>
+        <record id="F51.03" model="mental.health.notes">
+            <field name="name">Paradoxical insomnia</field>
+        </record>
+        <record id="F51.04" model="mental.health.notes">
+            <field name="name">Psychophysiologic insomnia</field>
+        </record>
+        <record id="F51.05" model="mental.health.notes">
+            <field name="name">Insomnia due to other mental disorder</field>
+        </record>
+        <record id="F51.09" model="mental.health.notes">
+            <field name="name">Other insomnia not due to a substance or known physiological condition</field>
+        </record>
+        <record id="F51.11" model="mental.health.notes">
+            <field name="name">Primary hypersomnia</field>
+        </record>
+        <record id="F51.12" model="mental.health.notes">
+            <field name="name">Insufficient sleep syndrome</field>
+        </record>
+        <record id="F51.13" model="mental.health.notes">
+            <field name="name">Hypersomnia due to other mental disorder</field>
+        </record>
+        <record id="F51.19" model="mental.health.notes">
+            <field name="name">Other hypersomnia not due to a substance or known physiological condition</field>
+        </record>
+        <record id="F51.3" model="mental.health.notes">
+            <field name="name">Sleepwalking [somnambulism]</field>
+        </record>
+        <record id="F51.4" model="mental.health.notes">
+            <field name="name">Sleep terrors [night terrors]</field>
+        </record>
+        <record id="F51.5" model="mental.health.notes">
+            <field name="name">Nightmare disorder</field>
+        </record>
+        <record id="F51.8" model="mental.health.notes">
+            <field name="name">Other sleep disorders not due to a substance or known physiological condition</field>
+        </record>
+        <record id="F51.9" model="mental.health.notes">
+            <field name="name">Sleep disorder not due to a substance or known physiological condition, unspecified</field>
+        </record>
+        <record id="F52.0" model="mental.health.notes">
+            <field name="name">Hypoactive sexual desire disorder</field>
+        </record>
+        <record id="F52.1" model="mental.health.notes">
+            <field name="name">Sexual aversion disorder</field>
+        </record>
+        <record id="F52.21" model="mental.health.notes">
+            <field name="name">Male erectile disorder</field>
+        </record>
+        <record id="F52.22" model="mental.health.notes">
+            <field name="name">Female sexual arousal disorder</field>
+        </record>
+        <record id="F52.31" model="mental.health.notes">
+            <field name="name">Female orgasmic disorder</field>
+        </record>
+        <record id="F52.32" model="mental.health.notes">
+            <field name="name">Male orgasmic disorder</field>
+        </record>
+        <record id="F52.4" model="mental.health.notes">
+            <field name="name">Premature ejaculation</field>
+        </record>
+        <record id="F52.5" model="mental.health.notes">
+            <field name="name">Vaginismus not due to a substance or known physiological condition</field>
+        </record>
+        <record id="F52.6" model="mental.health.notes">
+            <field name="name">Dyspareunia not due to a substance or known physiological condition</field>
+        </record>
+        <record id="F52.8" model="mental.health.notes">
+            <field name="name">Other sexual dysfunction not due to a substance or known physiological condition</field>
+        </record>
+        <record id="F52.9" model="mental.health.notes">
+            <field name="name">Unspecified sexual dysfunction not due to a substance or known physiological condition</field>
+        </record>
+        <record id="F53.0" model="mental.health.notes">
+            <field name="name">Postpartum depression</field>
+        </record>
+        <record id="F53.1" model="mental.health.notes">
+            <field name="name">Puerperal psychosis</field>
+        </record>
+        <record id="F54" model="mental.health.notes">
+            <field name="name">Psychological and behavioral factors associated with disorders or diseases classified elsewhere</field>
+        </record>
+        <record id="F55.0" model="mental.health.notes">
+            <field name="name">Abuse of antacids</field>
+        </record>
+        <record id="F55.1" model="mental.health.notes">
+            <field name="name">Abuse of herbal or folk remedies</field>
+        </record>
+        <record id="F55.2" model="mental.health.notes">
+            <field name="name">Abuse of laxatives</field>
+        </record>
+        <record id="F55.3" model="mental.health.notes">
+            <field name="name">Abuse of steroids or hormones</field>
+        </record>
+        <record id="F55.4" model="mental.health.notes">
+            <field name="name">Abuse of vitamins</field>
+        </record>
+        <record id="F55.8" model="mental.health.notes">
+            <field name="name">Abuse of other non-psychoactive substances</field>
+        </record>
+        <record id="F59" model="mental.health.notes">
+            <field name="name">Unspecified behavioral syndromes associated with physiological disturbances and physical factors</field>
+        </record>
+        <record id="F60.0" model="mental.health.notes">
+            <field name="name">Paranoid personality disorder</field>
+        </record>
+        <record id="F60.1" model="mental.health.notes">
+            <field name="name">Schizoid personality disorder</field>
+        </record>
+        <record id="F60.2" model="mental.health.notes">
+            <field name="name">Antisocial personality disorder</field>
+        </record>
+        <record id="F60.3" model="mental.health.notes">
+            <field name="name">Borderline personality disorder</field>
+        </record>
+        <record id="F60.4" model="mental.health.notes">
+            <field name="name">Histrionic personality disorder</field>
+        </record>
+        <record id="F60.5" model="mental.health.notes">
+            <field name="name">Obsessive-compulsive personality disorder</field>
+        </record>
+        <record id="F60.6" model="mental.health.notes">
+            <field name="name">Avoidant personality disorder</field>
+        </record>
+        <record id="F60.7" model="mental.health.notes">
+            <field name="name">Dependent personality disorder</field>
+        </record>
+        <record id="F60.81" model="mental.health.notes">
+            <field name="name">Narcissistic personality disorder</field>
+        </record>
+        <record id="F60.89" model="mental.health.notes">
+            <field name="name">Other specific personality disorders</field>
+        </record>
+        <record id="F60.9" model="mental.health.notes">
+            <field name="name">Personality disorder, unspecified</field>
+        </record>
+        <record id="F63.0" model="mental.health.notes">
+            <field name="name">Pathological gambling</field>
+        </record>
+        <record id="F63.1" model="mental.health.notes">
+            <field name="name">Pyromania</field>
+        </record>
+        <record id="F63.2" model="mental.health.notes">
+            <field name="name">Kleptomania</field>
+        </record>
+        <record id="F63.3" model="mental.health.notes">
+            <field name="name">Trichotillomania</field>
+        </record>
+        <record id="F63.81" model="mental.health.notes">
+            <field name="name">Intermittent explosive disorder</field>
+        </record>
+        <record id="F63.89" model="mental.health.notes">
+            <field name="name">Other impulse disorders</field>
+        </record>
+        <record id="F63.9" model="mental.health.notes">
+            <field name="name">Impulse disorder, unspecified</field>
+        </record>
+        <record id="F64.0" model="mental.health.notes">
+            <field name="name">Transsexualism</field>
+        </record>
+        <record id="F64.1" model="mental.health.notes">
+            <field name="name">Dual role transvestism</field>
+        </record>
+        <record id="F64.2" model="mental.health.notes">
+            <field name="name">Gender identity disorder of childhood</field>
+        </record>
+        <record id="F64.8" model="mental.health.notes">
+            <field name="name">Other gender identity disorders</field>
+        </record>
+        <record id="F64.9" model="mental.health.notes">
+            <field name="name">Gender identity disorder, unspecified</field>
+        </record>
+        <record id="F65.0" model="mental.health.notes">
+            <field name="name">Fetishism</field>
+        </record>
+        <record id="F65.1" model="mental.health.notes">
+            <field name="name">Transvestic fetishism</field>
+        </record>
+        <record id="F65.2" model="mental.health.notes">
+            <field name="name">Exhibitionism</field>
+        </record>
+        <record id="F65.3" model="mental.health.notes">
+            <field name="name">Voyeurism</field>
+        </record>
+        <record id="F65.4" model="mental.health.notes">
+            <field name="name">Pedophilia</field>
+        </record>
+        <record id="F65.50" model="mental.health.notes">
+            <field name="name">Sadomasochism, unspecified</field>
+        </record>
+        <record id="F65.51" model="mental.health.notes">
+            <field name="name">Sexual masochism</field>
+        </record>
+        <record id="F65.52" model="mental.health.notes">
+            <field name="name">Sexual sadism</field>
+        </record>
+        <record id="F65.81" model="mental.health.notes">
+            <field name="name">Frotteurism</field>
+        </record>
+        <record id="F65.89" model="mental.health.notes">
+            <field name="name">Other paraphilias</field>
+        </record>
+        <record id="F65.9" model="mental.health.notes">
+            <field name="name">Paraphilia, unspecified</field>
+        </record>
+        <record id="F66" model="mental.health.notes">
+            <field name="name">Other sexual disorders</field>
+        </record>
+        <record id="F68.10" model="mental.health.notes">
+            <field name="name">Factitious disorder imposed on self, unspecified</field>
+        </record>
+        <record id="F68.11" model="mental.health.notes">
+            <field name="name">Factitious disorder imposed on self, with predominantly psychological signs and symptoms</field>
+        </record>
+        <record id="F68.12" model="mental.health.notes">
+            <field name="name">Factitious disorder imposed on self, with predominantly physical signs and symptoms</field>
+        </record>
+        <record id="F68.13" model="mental.health.notes">
+            <field name="name">Factitious disorder imposed on self, with combined psychological and physical signs and symptoms</field>
+        </record>
+        <record id="F68.8" model="mental.health.notes">
+            <field name="name">Other specified disorders of adult personality and behavior</field>
+        </record>
+        <record id="F68.A" model="mental.health.notes">
+            <field name="name">Factitious disorder imposed on another</field>
+        </record>
+        <record id="F69" model="mental.health.notes">
+            <field name="name">Unspecified disorder of adult personality and behavior</field>
+        </record>
+        <record id="F70" model="mental.health.notes">
+            <field name="name">Mild intellectual disabilities</field>
+        </record>
+        <record id="F71" model="mental.health.notes">
+            <field name="name">Moderate intellectual disabilities</field>
+        </record>
+        <record id="F72" model="mental.health.notes">
+            <field name="name">Severe intellectual disabilities</field>
+        </record>
+        <record id="F73" model="mental.health.notes">
+            <field name="name">Profound intellectual disabilities</field>
+        </record>
+        <record id="F78" model="mental.health.notes">
+            <field name="name">Other intellectual disabilities</field>
+        </record>
+        <record id="F78.A1" model="mental.health.notes">
+            <field name="name">SYNGAP1-related intellectual disability</field>
+        </record>
+        <record id="F78.A9" model="mental.health.notes">
+            <field name="name">Other genetic related intellectual disability</field>
+        </record>
+        <record id="F79" model="mental.health.notes">
+            <field name="name">Unspecified intellectual disabilities</field>
+        </record>
+        <record id="F80.0" model="mental.health.notes">
+            <field name="name">Phonological disorder</field>
+        </record>
+        <record id="F80.1" model="mental.health.notes">
+            <field name="name">Expressive language disorder</field>
+        </record>
+        <record id="F80.2" model="mental.health.notes">
+            <field name="name">Mixed receptive-expressive language disorder</field>
+        </record>
+        <record id="F80.4" model="mental.health.notes">
+            <field name="name">Speech and language development delay due to hearing loss</field>
+        </record>
+        <record id="F80.81" model="mental.health.notes">
+            <field name="name">Childhood onset fluency disorder</field>
+        </record>
+        <record id="F80.82" model="mental.health.notes">
+            <field name="name">Social pragmatic communication disorder</field>
+        </record>
+        <record id="F80.89" model="mental.health.notes">
+            <field name="name">Other developmental disorders of speech and language</field>
+        </record>
+        <record id="F80.9" model="mental.health.notes">
+            <field name="name">Developmental disorder of speech and language, unspecified</field>
+        </record>
+        <record id="F81.0" model="mental.health.notes">
+            <field name="name">Specific reading disorder</field>
+        </record>
+        <record id="F81.2" model="mental.health.notes">
+            <field name="name">Mathematics disorder</field>
+        </record>
+        <record id="F81.81" model="mental.health.notes">
+            <field name="name">Disorder of written expression</field>
+        </record>
+        <record id="F81.89" model="mental.health.notes">
+            <field name="name">Other developmental disorders of scholastic skills</field>
+        </record>
+        <record id="F81.9" model="mental.health.notes">
+            <field name="name">Developmental disorder of scholastic skills, unspecified</field>
+        </record>
+        <record id="F82" model="mental.health.notes">
+            <field name="name">Specific developmental disorder of motor function</field>
+        </record>
+        <record id="F84.0" model="mental.health.notes">
+            <field name="name">Autistic disorder</field>
+        </record>
+        <record id="F84.2" model="mental.health.notes">
+            <field name="name">Rett's syndrome</field>
+        </record>
+        <record id="F84.3" model="mental.health.notes">
+            <field name="name">Other childhood disintegrative disorder</field>
+        </record>
+        <record id="F84.5" model="mental.health.notes">
+            <field name="name">Asperger's syndrome</field>
+        </record>
+        <record id="F84.8" model="mental.health.notes">
+            <field name="name">Other pervasive developmental disorders</field>
+        </record>
+        <record id="F84.9" model="mental.health.notes">
+            <field name="name">Pervasive developmental disorder, unspecified</field>
+        </record>
+        <record id="F88" model="mental.health.notes">
+            <field name="name">Other disorders of psychological development</field>
+        </record>
+        <record id="F89" model="mental.health.notes">
+            <field name="name">Unspecified disorder of psychological development</field>
+        </record>
+        <record id="F90.0" model="mental.health.notes">
+            <field name="name">Attention-deficit hyperactivity disorder, predominantly inattentive type</field>
+        </record>
+        <record id="F90.1" model="mental.health.notes">
+            <field name="name">Attention-deficit hyperactivity disorder, predominantly hyperactive type</field>
+        </record>
+        <record id="F90.2" model="mental.health.notes">
+            <field name="name">Attention-deficit hyperactivity disorder, combined type</field>
+        </record>
+        <record id="F90.8" model="mental.health.notes">
+            <field name="name">Attention-deficit hyperactivity disorder, other type</field>
+        </record>
+        <record id="F90.9" model="mental.health.notes">
+            <field name="name">Attention-deficit hyperactivity disorder, unspecified type</field>
+        </record>
+        <record id="F91.0" model="mental.health.notes">
+            <field name="name">Conduct disorder confined to family context</field>
+        </record>
+        <record id="F91.1" model="mental.health.notes">
+            <field name="name">Conduct disorder, childhood-onset type</field>
+        </record>
+        <record id="F91.2" model="mental.health.notes">
+            <field name="name">Conduct disorder, adolescent-onset type</field>
+        </record>
+        <record id="F91.3" model="mental.health.notes">
+            <field name="name">Oppositional defiant disorder</field>
+        </record>
+        <record id="F91.8" model="mental.health.notes">
+            <field name="name">Other conduct disorders</field>
+        </record>
+        <record id="F91.9" model="mental.health.notes">
+            <field name="name">Conduct disorder, unspecified</field>
+        </record>
+        <record id="F93.0" model="mental.health.notes">
+            <field name="name">Separation anxiety disorder of childhood</field>
+        </record>
+        <record id="F93.8" model="mental.health.notes">
+            <field name="name">Other childhood emotional disorders</field>
+        </record>
+        <record id="F93.9" model="mental.health.notes">
+            <field name="name">Childhood emotional disorder, unspecified</field>
+        </record>
+        <record id="F94.0" model="mental.health.notes">
+            <field name="name">Selective mutism</field>
+        </record>
+        <record id="F94.1" model="mental.health.notes">
+            <field name="name">Reactive attachment disorder of childhood</field>
+        </record>
+        <record id="F94.2" model="mental.health.notes">
+            <field name="name">Disinhibited attachment disorder of childhood</field>
+        </record>
+        <record id="F94.8" model="mental.health.notes">
+            <field name="name">Other childhood disorders of social functioning</field>
+        </record>
+        <record id="F94.9" model="mental.health.notes">
+            <field name="name">Childhood disorder of social functioning, unspecified</field>
+        </record>
+        <record id="F95.0" model="mental.health.notes">
+            <field name="name">Transient tic disorder</field>
+        </record>
+        <record id="F95.1" model="mental.health.notes">
+            <field name="name">Chronic motor or vocal tic disorder</field>
+        </record>
+        <record id="F95.2" model="mental.health.notes">
+            <field name="name">Tourette's disorder</field>
+        </record>
+        <record id="F95.8" model="mental.health.notes">
+            <field name="name">Other tic disorders</field>
+        </record>
+        <record id="F95.9" model="mental.health.notes">
+            <field name="name">Tic disorder, unspecified</field>
+        </record>
+        <record id="F98.0" model="mental.health.notes">
+            <field name="name">Enuresis not due to a substance or known physiological condition</field>
+        </record>
+        <record id="F98.1" model="mental.health.notes">
+            <field name="name">Encopresis not due to a substance or known physiological condition</field>
+        </record>
+        <record id="F98.21" model="mental.health.notes">
+            <field name="name">Rumination disorder of infancy</field>
+        </record>
+        <record id="F98.29" model="mental.health.notes">
+            <field name="name">Other feeding disorders of infancy and early childhood</field>
+        </record>
+        <record id="F98.3" model="mental.health.notes">
+            <field name="name">Pica of infancy and childhood</field>
+        </record>
+        <record id="F98.4" model="mental.health.notes">
+            <field name="name">Stereotyped movement disorders</field>
+        </record>
+        <record id="F98.5" model="mental.health.notes">
+            <field name="name">Adult onset fluency disorder</field>
+        </record>
+        <record id="F98.8" model="mental.health.notes">
+            <field name="name">Other specified behavioral and emotional disorders with onset usually occurring in childhood and adolescence</field>
+        </record>
+        <record id="F98.9" model="mental.health.notes">
+            <field name="name">Unspecified behavioral and emotional disorders with onset usually occurring in childhood and adolescence</field>
+        </record>
+        <record id="F99" model="mental.health.notes">
+            <field name="name">Mental disorder, not otherwise specified</field>
+        </record>
+    </data>
+</odoo>

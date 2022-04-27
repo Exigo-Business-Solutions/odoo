@@ -1,7 +1,9 @@
+from .icdConverter import icdCombined
 from odoo import fields, models
 
 
 class MentalHealthNotes(models.Model):
+    icdCodes = icdCombined
     _name = "mental_health.notes"
     _description = "A model to be used to write mental health notes"
 
