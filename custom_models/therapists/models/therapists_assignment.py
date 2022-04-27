@@ -17,8 +17,8 @@ class TherapistAssignments(models.Model):
             ('groups_id', '=', self.env.ref('mental_health.group_mental_health_therapist').id)])
 
     assigned_clients = fields.Many2many('res.users', 'assigned_clients_rel', 'client_id', string="Assigned Clients",
-                                        required=True, domain=lambda self: [
-            ('groups_id', '=', self.env.ref('mental_health.group_mental_health_user').id)])
+                                        required=True, domain=lambda self: ['&',
+            ('groups_id', '=', self.env.ref('mental_health.group_mental_health_user').id), ('groups_id', '!=', self.env.ref('mental_health.group_mental_health_therapist').id)])
 
     search_ids = fields.Char(compute="_compute_search_ids", search="_search_ids_search")
 
