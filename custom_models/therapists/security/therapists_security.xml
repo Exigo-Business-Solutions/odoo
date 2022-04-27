@@ -20,7 +20,7 @@
         <record id="therapists.group_therapists_therapist" model="res.groups">
             <field name="name">Therapist</field>
             <field name="comment">Therapist Permission Group</field>
-            <field name="implied_ids" eval="[(4, ref('therapists.group_therapists_client'))]"/>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
             <field name="category_id" ref="module_category_therapists"/>
         </record>
 

@@ -13,12 +13,15 @@ class TherapistAssignments(models.Model):
     _rec_name = 'therapist'
 
     therapist = fields.Many2one('res.users', string="Therapist",
-                                required=True, domain=lambda self: [
-            ('groups_id', '=', self.env.ref('mental_health.group_mental_health_therapist').id)])
+                                required=True, domain=lambda self: ['&',
+                                                                    ('groups_id', '=', self.env.ref(
+                                                                        'therapists.group_therapists_therapist').id), (
+                                                                    'groups_id', '!=', self.env.ref(
+                                                                        'therapists.group_therapists_admin').id)])
 
     assigned_clients = fields.Many2many('res.users', 'assigned_clients_rel', 'client_id', string="Assigned Clients",
-                                        required=True, domain=lambda self: ['&',
-            ('groups_id', '=', self.env.ref('mental_health.group_mental_health_user').id), ('groups_id', '!=', self.env.ref('mental_health.group_mental_health_therapist').id)])
+                                        required=True, domain=lambda self: [
+            ('groups_id', '=', self.env.ref('therapists.group_therapists_client').id)])
 
     search_ids = fields.Char(compute="_compute_search_ids", search="_search_ids_search")
 
