@@ -5,21 +5,15 @@
 #
 # Version 0.1 (Pre-Alpha)
 {
-    'name': 'Mental Health Notes',
+    'name': 'ICD-10',
     'license': 'LGPL-3',
     'depends': [
         'base',
-        'contacts',
-        'icd10',
-        'therapists',
     ],
     'data': [
-        'security/mental_health_security.xml',
         'security/ir.model.access.csv',
-        'views/mental_health_notes_views.xml',
-        'views/mental_health_notes_menus.xml',
+        'data/icd10.csv',
     ],
     'installable': True,
-    'application': True,
     'auto_install': True
 }

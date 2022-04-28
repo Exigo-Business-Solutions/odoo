@@ -4,4 +4,4 @@
 # This code is being provided “as is” with no warranties, express or implied.
 #
 # Version 0.1 (Pre-Alpha)
-from . import mental_health_notes
+from . import icd10
