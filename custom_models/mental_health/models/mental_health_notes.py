@@ -23,7 +23,8 @@ class MentalHealthNotes(models.Model):
                                        default='in_person',
                                        help='Select the mode of therapy.')
 
-    date = fields.Date(string='Date Recorded', required=True, default=lambda self: fields.Date.today(), copy=False)
+    date = fields.Date(string='Date Recorded', required=True, default=lambda self: fields.Date.today(), copy=False,
+                       readonly=True)
     arrival_status = fields.Selection(string='Arrival Status', required=True,
                                       selection=[('on_time', 'On Time'),
                                                  ('late', 'Late'),
