@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="therapist_assignment_default_action" model="ir.actions.act_window">
+        <field name="name">Therapist Assignment</field>
+        <field name="res_model">therapists</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                There are no therapist assignments.
+            </p>
+        </field>
+        <!--Restrict access to viewing the content based on the value of `search_ids` in the mental health module-->
+        <field name="domain">[('search_ids','=',1)]</field>
+    </record>
+
+    <record id="therapists_view_tree" model="ir.ui.view">
+        <field name="name">Therapist Assignment</field>
+        <field name="model">therapists</field>
+        <field name="arch" type="xml">
+            <tree string="Therapists">
+                <field name="therapist"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="therapists_view_form" model="ir.ui.view">
+        <field name="name">Therapist Assignment</field>
+        <field name="model">therapists</field>
+        <field name="arch" type="xml">
+            <form string="Notes (Maybe I'll see this string one day)">
+                <sheet>
+                    <group>
+                        <field name="therapist"/>
+                        <field name="assigned_clients"/>
+                        <field name="search_ids" attrs="{'invisible': 1}"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
