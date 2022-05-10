@@ -36,7 +36,7 @@
             <form string="Notes (Maybe I'll see this string one day)">
                 <sheet>
                     <group>
-                        <field name="client"/>
+                        <field name="client_id"/>
                         <field name="mode_of_therapy"/>
                         <field name="date"/>
                         <field name="arrival_status"/>
