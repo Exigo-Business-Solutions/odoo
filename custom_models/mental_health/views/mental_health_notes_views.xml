@@ -22,7 +22,7 @@
         <field name="model">mental_health.notes</field>
         <field name="arch" type="xml">
             <tree string="Notes">
-                <field name="client"/>
+                <field name="client_id"/>
                 <field name="date"/>
                 <field name="icd10_code"/>
             </tree>
