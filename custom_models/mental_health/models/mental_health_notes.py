@@ -11,7 +11,7 @@ class MentalHealthNotes(models.Model):
     _name = "mental_health.notes"
     _description = "A model to be used to write mental health notes"
 
-    client = fields.Many2one(comodel_name='res.users', required=True, copy=True,
+    client_id = fields.Many2one(comodel_name='res.users', required=True, copy=True,
                              domain=lambda self: [('id', 'in', self.env["therapists"].search(
                                  [('therapist', '=', self.env.uid)]).assigned_clients.ids)])
     mode_of_therapy = fields.Selection(string='Mode of Therapy', required=True,
